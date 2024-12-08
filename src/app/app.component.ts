@@ -5,12 +5,24 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <div class="home-section">
+      <h1 class="main-header">Welcome to the homepage!</h1>
+      <img class="background" src="/assets/stable-diffusion-iceland.jpg" alt="main image" />
+      <div class="down-arrow-container">
+        <img class="down-arrow" src="/assets/down-arrow.svg" alt="down arrow" />
+      </div>
+    </div>
 
     <router-outlet />
+
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
   `,
-  styles: [],
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'homepage';
-}
+export class AppComponent {}
