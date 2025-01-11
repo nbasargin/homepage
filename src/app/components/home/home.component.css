@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
-  width: 100vmax;
+  width: 100vw;
 }
 
 .down-arrow-container {

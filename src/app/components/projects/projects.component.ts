@@ -6,9 +6,16 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
   imports: [ProjectCardComponent],
   template: `
     <div class="projects-section">
-      <h2 class="section-header">Project Highlights</h2>
+      <h2 class="section-header">Projects</h2>
       <div class="project-list">
-        <app-project-card title="Project 1"></app-project-card>
+        <app-project-card class="project-card" title="Project 1"></app-project-card>
+        <app-project-card class="project-card" title="Project 2"></app-project-card>
+        <app-project-card
+          class="project-card"
+          title="Project 3 with a very very very very very very very very very long title"
+        ></app-project-card>
+        <app-project-card class="project-card" title="Project 4"></app-project-card>
+        <app-project-card class="project-card" title="Project 5"></app-project-card>
       </div>
     </div>
   `,
