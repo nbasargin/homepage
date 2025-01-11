@@ -1,41 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProjectCardComponent],
+  imports: [PageHeaderComponent, HomeComponent, ProjectsComponent],
   template: `
-    <div class="page-header">
-      <nav class="navbar">
-        <h1 class="navbar-title">Homepage</h1>
-        <div class="navbar-item">ItemA</div>
-        <div class="navbar-item">ItemB</div>
-      </nav>
-    </div>
-    <div class="home-section">
-      <img class="background" src="/assets/stable-diffusion-iceland.jpg" alt="main image" />
-      <div class="down-arrow-container">
-        <img class="down-arrow" src="/assets/down-arrow.svg" alt="down arrow" />
-      </div>
-    </div>
-
-    <router-outlet />
-
-    <div class="projects-section">
-      <h2 class="section-header">Project Highlights</h2>
-      <div class="project-list">
-        <app-project-card title="Project 1"></app-project-card>
-      </div>
-    </div>
-
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
-    <div class="placeholder"></div>
+    <app-page-header></app-page-header>
+    <app-home></app-home>
+    <app-projects></app-projects>
   `,
   styleUrl: './app.component.css',
 })
