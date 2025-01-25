@@ -9,16 +9,16 @@ import { MatTabsModule } from '@angular/material/tabs';
     <div class="page-header">
       <nav class="navbar">
         <div class="navbar-title">
-          <span class="navbar-link" routerLinkActive="active" routerLink="/highlights">Homepage</span>
+          <span class="navbar-link" routerLink="/highlights">Homepage</span>
         </div>
-        <div class="navbar-item">
-          <span class="navbar-link" routerLinkActive="active" routerLink="/highlights">Highlights</span>
+        <div class="navbar-item" routerLinkActive="active">
+          <span class="navbar-link" routerLink="/highlights">Highlights</span>
         </div>
-        <div class="navbar-item">
-          <span class="navbar-link" routerLinkActive="active" routerLink="/projects">Projects</span>
+        <div class="navbar-item" routerLinkActive="active">
+          <span class="navbar-link" routerLink="/projects">Projects</span>
         </div>
-        <div class="navbar-item">
-          <span class="navbar-link" routerLinkActive="active" routerLink="/about">About</span>
+        <div class="navbar-item" routerLinkActive="active">
+          <span class="navbar-link" routerLink="/about">About</span>
         </div>
       </nav>
     </div>

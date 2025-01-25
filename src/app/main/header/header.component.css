@@ -10,23 +10,30 @@
 
 .navbar {
   display: flex;
-  align-items: center;
-  padding: var(--global-header-padding);
+  align-items: baseline;
+  padding: 0 8px;
   margin: 0;
+  height: 100%;
 }
 
 .navbar-title {
-  padding: 0;
-  margin: 0;
   flex-grow: 1;
-  font-size: 24px;
-  line-height: var(--global-header-line);
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: var(--global-header-height);
+  height: 100%;
 }
 
 .navbar-item {
   padding: 0 16px;
   font-size: 18px;
-  line-height: var(--global-header-line);
+  line-height: var(--global-header-height);
+  height: 100%;
+
+  &.active {
+    border-bottom: 2px solid var(--mat-sys-on-surface);
+  }
 }
 
 .navbar-link {
