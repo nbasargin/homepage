@@ -1,0 +1,11 @@
+.about-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  padding-top: calc(var(--global-header-height) + 8px);
+}
+
+.section-header {
+  text-align: center;
+}

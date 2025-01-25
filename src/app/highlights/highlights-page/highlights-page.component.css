@@ -1,4 +1,4 @@
-.home-section {
+.highlights-page {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -13,17 +13,4 @@
   top: 0;
   transform: translate(-50%, 0);
   width: 100vw;
-}
-
-.down-arrow-container {
-  position: absolute;
-  bottom: 3rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.down-arrow {
-  width: 3rem;
-  height: 3rem;
 }

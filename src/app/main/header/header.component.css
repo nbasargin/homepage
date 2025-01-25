@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: var(--global-header-height);
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -10,7 +11,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 32px;
+  padding: var(--global-header-padding);
   margin: 0;
   color: white;
 }
@@ -20,9 +21,15 @@
   margin: 0;
   flex-grow: 1;
   font-size: 24px;
+  line-height: var(--global-header-line);
 }
 
 .navbar-item {
   padding: 0 16px;
   font-size: 18px;
+  line-height: var(--global-header-line);
+}
+
+.navbar-link {
+  cursor: pointer;
 }

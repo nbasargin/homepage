@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-projects-page',
   imports: [ProjectCardComponent],
   template: `
-    <div class="projects-section">
+    <div class="projects-page">
       <h2 class="section-header">Projects</h2>
       <div class="project-list">
         <app-project-card class="project-card" title="Project 1"></app-project-card>
@@ -19,6 +19,6 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
       </div>
     </div>
   `,
-  styleUrl: './projects.component.css',
+  styleUrl: './projects-page.component.css',
 })
-export class ProjectsComponent {}
+export class ProjectsPageComponent {}

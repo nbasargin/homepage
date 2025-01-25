@@ -1,4 +1,11 @@
 @use '@angular/material' as mat;
+
+:root {
+  --global-header-height: 64px;
+  --global-header-padding: 16px;
+  --global-header-line: 32px;
+}
+
 * {
   box-sizing: border-box;
 }
