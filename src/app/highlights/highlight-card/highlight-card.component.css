@@ -15,6 +15,16 @@
   width: 100vw;
 }
 
+.active-area {
+  position: absolute;
+  top: var(--global-header-height);
+  left: 50%;
+  width: 100%;
+  max-width: var(--global-max-width);
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+
 .card {
   position: absolute;
   bottom: 64px;
