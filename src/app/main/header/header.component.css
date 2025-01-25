@@ -4,7 +4,7 @@
   width: 100%;
   height: var(--global-header-height);
   backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.3);
+  background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);
   z-index: 10;
 }
 
@@ -13,7 +13,6 @@
   align-items: center;
   padding: var(--global-header-padding);
   margin: 0;
-  color: white;
 }
 
 .navbar-title {

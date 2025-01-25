@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
+import { HighlightCardComponent } from '../highlight-card/highlight-card.component';
 
 @Component({
   selector: 'app-highlights-page',
-  imports: [],
-  template: `
-    <div class="highlights-page">
-      <img class="background" src="/assets/stable-diffusion-iceland.jpg" alt="main image" />
-    </div>
-  `,
+  imports: [HighlightCardComponent],
+  template: ` <app-highlight-card></app-highlight-card> `,
   styleUrl: './highlights-page.component.css',
 })
 export class HighlightsPageComponent {}

@@ -4,7 +4,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-page-header',
-  standalone: true,
   imports: [RouterLink, RouterLinkActive, MatTabsModule],
   template: `
     <div class="page-header">
