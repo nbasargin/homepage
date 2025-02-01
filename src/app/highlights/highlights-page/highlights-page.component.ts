@@ -4,7 +4,13 @@ import { HighlightCardComponent } from '../highlight-card/highlight-card.compone
 @Component({
   selector: 'app-highlights-page',
   imports: [HighlightCardComponent],
-  template: ` <app-highlight-card></app-highlight-card> `,
+  template: `
+    <img class="background" src="/assets/stable-diffusion-iceland.jpg" alt="background" />
+
+    <div class="active-area">
+      <app-highlight-card></app-highlight-card>
+    </div>
+  `,
   styleUrl: './highlights-page.component.css',
 })
 export class HighlightsPageComponent {}
