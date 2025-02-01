@@ -16,6 +16,15 @@
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+  opacity: 0;
+}
+
+.cross-fade {
+  transition: opacity 1s;
+}
+
+.shown {
+  opacity: 1;
 }
 
 .active-area {
@@ -26,4 +35,10 @@
   display: flex;
   flex-flow: row-reverse nowrap;
   align-items: end;
+}
+
+.controls {
+  position: relative;
+  text-align: center;
+  padding: 8px;
 }

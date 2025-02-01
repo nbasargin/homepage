@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 
@@ -8,15 +8,19 @@ import { MatCardModule } from '@angular/material/card';
   template: `
     <mat-card class="card">
       <mat-card-header>
-        <mat-card-title>Highlight Title</mat-card-title>
-        <mat-card-subtitle>subtitle</mat-card-subtitle>
+        <mat-card-title>{{ title() }}</mat-card-title>
+        <mat-card-subtitle>{{ subtitle() }}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>description</p>
+        <p>{{ description() }}</p>
       </mat-card-content>
       <mat-card-actions> action-buttons </mat-card-actions>
     </mat-card>
   `,
   styleUrl: 'highlight-card.component.css',
 })
-export class HighlightCardComponent {}
+export class HighlightCardComponent {
+  title = input<string>();
+  subtitle = input<string>();
+  description = input<string>();
+}
