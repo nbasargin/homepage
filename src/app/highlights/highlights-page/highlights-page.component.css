@@ -1,8 +1,11 @@
 :host {
+  --highlights-spacing: 64px;
   position: relative;
-  display: block;
   width: 100%;
   min-height: 100vh;
+  padding: var(--highlights-spacing);
+  padding-top: calc(var(--highlights-spacing) + var(--global-header-height));
+  display: flex;
 }
 
 .background {
@@ -16,14 +19,10 @@
 }
 
 .active-area {
-  position: absolute;
-  top: var(--global-header-height);
-  left: 50%;
   width: 100%;
-  max-width: calc(64px * 2 + var(--global-max-width));
-  padding: 64px;
-  transform: translate(-50%, 0);
-  bottom: 0;
+  max-width: var(--global-max-width);
+  max-width: var(--global-max-width);
+  margin: 0 auto;
   display: flex;
   flex-flow: row-reverse nowrap;
   align-items: end;

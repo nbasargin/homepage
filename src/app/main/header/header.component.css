@@ -6,12 +6,12 @@
   backdrop-filter: blur(10px);
   background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);
   z-index: 10;
+  padding: 0 var(--global-page-spacing);
 }
 
 .navbar {
   display: flex;
   align-items: baseline;
-  padding: 0 8px;
   margin: 0;
   height: 100%;
   max-width: var(--global-max-width);
@@ -20,7 +20,6 @@
 
 .navbar-title {
   flex-grow: 1;
-  padding: 0 16px;
   font-size: 18px;
   font-weight: bold;
   line-height: var(--global-header-height);
@@ -35,6 +34,7 @@
 
   &.active {
     border-bottom: 2px solid var(--mat-sys-on-surface);
+    background: color-mix(in srgb, var(--mat-sys-on-surface) 10%, transparent);
   }
 }
 
