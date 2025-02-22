@@ -1,0 +1,7 @@
+:host {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--global-image-spacing);
+  margin: 8px 0 16px;
+}

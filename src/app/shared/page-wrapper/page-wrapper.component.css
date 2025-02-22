@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--global-page-spacing);
+  padding-top: var(--global-header-height);
+  overflow-x: hidden;
+}
+
+.page-content {
+  max-width: var(--global-max-width);
+  margin: 0 auto;
+}

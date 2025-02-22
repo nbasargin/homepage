@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100%;
   height: var(--global-header-height);
   backdrop-filter: blur(10px);
   background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);

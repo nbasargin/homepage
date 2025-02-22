@@ -4,6 +4,7 @@
   --global-header-height: 64px;
   --global-max-width: 1200px;
   --global-page-spacing: 24px;
+  --global-image-spacing: 16px;
 }
 
 * {
@@ -15,6 +16,7 @@ html {
   scrollbar-width: thin;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   @include mat.theme(
     (
       color: mat.$violet-palette,
@@ -34,4 +36,14 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+/* utility styles */
+
+.img-3-columns {
+  width: calc((var(--global-max-width) - var(--global-image-spacing) * 2 - 1px) / 3);
+}
+
+.img-rounded {
+  border-radius: var(--mat-sys-corner-medium);
 }

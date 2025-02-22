@@ -1,21 +1,6 @@
-.projects-page {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: var(--global-page-spacing);
-  padding-top: var(--global-header-height);
-}
-
-.section-header {
-  text-align: center;
-}
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--global-page-spacing);
-
-  max-width: var(--global-max-width);
-  margin: 0 auto;
   justify-content: center;
 }
