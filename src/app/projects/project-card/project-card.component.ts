@@ -1,25 +1,34 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
+import { ProjectData } from '../projects-page/projects-data';
 
 @Component({
   selector: 'app-project-card',
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule, RouterModule],
   template: `
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>{{ title() }} </mat-card-title>
-        <mat-card-subtitle>subtitle</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="/assets/stable-diffusion-iceland.jpg" />
-      <mat-card-content>
-        <p>description</p>
-      </mat-card-content>
-      <mat-card-actions> action-buttons </mat-card-actions>
-    </mat-card>
+    @if (projectData(); as projectData) {
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ projectData.title }} </mat-card-title>
+          <mat-card-subtitle>{{ projectData.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="projectData.imageUrl" />
+        <mat-card-content>
+          <p>{{ projectData.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          @if (projectData.detailsLink) {
+            <button mat-button [routerLink]="projectData.detailsLink">Details</button>
+          }
+        </mat-card-actions>
+      </mat-card>
+    }
   `,
   styleUrl: 'project-card.component.css',
 })
 export class ProjectCardComponent {
-  title = input<string>();
+  projectData = input<ProjectData>();
 }

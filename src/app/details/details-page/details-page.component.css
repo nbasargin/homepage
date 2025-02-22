@@ -1,0 +1,12 @@
+.details-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--global-page-spacing);
+  padding-top: var(--global-header-height);
+}
+
+.details-area {
+  max-width: var(--global-max-width);
+  margin: 0 auto;
+}
