@@ -1,0 +1,28 @@
+:host {
+  --column-size: 200px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: var(--column-size) 1fr;
+  gap: var(--global-image-spacing);
+  justify-content: start;
+  margin-bottom: var(--global-page-spacing);
+}
+
+@media (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-picture {
+  width: var(--column-size);
+  height: var(--column-size);
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.personal-info {
+  align-self: center;
+}
