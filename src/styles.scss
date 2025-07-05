@@ -70,7 +70,7 @@ body {
 }
 
 .img-3-columns {
-  width: calc((var(--global-max-width) - var(--global-image-spacing) * 2 - 1px) / 3);
+  width: calc((var(--global-max-width) - var(--global-image-spacing) * 2 - var(--global-page-spacing) * 2 - 1px) / 3);
   max-width: 100%;
 }
 

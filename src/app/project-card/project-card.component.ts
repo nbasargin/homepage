@@ -11,11 +11,11 @@ import { ProjectData } from '../page-projects/projects-data';
   template: `
     @if (projectData(); as projectData) {
       <mat-card>
+        <img mat-card-image [src]="projectData.imageUrl" />
         <mat-card-header>
           <mat-card-title>{{ projectData.title }} </mat-card-title>
           <mat-card-subtitle>{{ projectData.subtitle }}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image [src]="projectData.imageUrl" />
         <mat-card-content>
           <p>{{ projectData.description }}</p>
         </mat-card-content>

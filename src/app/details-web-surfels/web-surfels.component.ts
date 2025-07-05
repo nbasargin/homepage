@@ -32,6 +32,9 @@ import { MatCardModule } from '@angular/material/card';
     <div>Point Cloud from Google Street View</div>
     <div>Sphere</div>
   `,
+  host: {
+    class: 'page-width',
+  },
   styleUrl: 'web-surfels.component.css',
 })
 export class WebSurfelsComponent {}

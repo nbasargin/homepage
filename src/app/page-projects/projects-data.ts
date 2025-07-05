@@ -12,7 +12,7 @@ export const PROJECTS: Array<ProjectData> = [
     subtitle: 'Point cloud rendering',
     description: "Master's thesis project",
     imageUrl: '/assets/stable-diffusion-iceland.jpg',
-    detailsLink: '/details/web-surfels',
+    detailsLink: '/web-surfels',
   },
   {
     title: 'Abizeitung',
