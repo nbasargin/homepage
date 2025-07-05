@@ -1,5 +1,0 @@
-.card {
-  width: 300px;
-  backdrop-filter: blur(10px);
-  background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);
-}

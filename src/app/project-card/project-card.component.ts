@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
-import { ProjectData } from '../projects-page/projects-data';
+import { ProjectData } from '../page-projects/projects-data';
 
 @Component({
-  selector: 'app-project-card',
+  selector: 'hp-project-card',
   imports: [CommonModule, MatButtonModule, MatCardModule, RouterModule],
   template: `
     @if (projectData(); as projectData) {

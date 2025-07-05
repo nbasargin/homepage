@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'hp-app',
   imports: [HeaderComponent, RouterModule],
   template: `
-    <app-page-header></app-page-header>
+    <hp-header></hp-header>
     <router-outlet></router-outlet>
   `,
   styleUrl: './app.component.css',

@@ -1,5 +1,6 @@
-.page-header {
-  position: fixed;
+:host {
+  display: block;
+  position: sticky;
   top: 0;
   width: 100%;
   max-width: 100%;
@@ -7,23 +8,12 @@
   backdrop-filter: blur(10px);
   background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);
   z-index: 10;
-  padding: 0 var(--global-page-spacing);
 }
 
 .navbar {
   display: flex;
   align-items: baseline;
-  margin: 0;
-  height: 100%;
-  max-width: var(--global-max-width);
-  margin: 0 auto;
-}
-
-.navbar-title {
-  flex-grow: 1;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: var(--global-header-height);
+  justify-content: end;
   height: 100%;
 }
 

@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-import { PageTitleComponent } from '../../shared/page-title/page-title.component';
-import { ImageContainerComponent } from '../../shared/image-container/image-container.component';
-import { ImageCaptionComponent } from '../../shared/image-caption/image-caption.component';
 
 @Component({
-  selector: 'app-web-surfels',
-  imports: [CommonModule, MatCardModule, PageTitleComponent, ImageContainerComponent, ImageCaptionComponent],
+  selector: 'hp-web-surfels',
+  imports: [CommonModule, MatCardModule],
   template: `
-    <app-page-title>WebSurfels</app-page-title>
+    <div class="block-title">WebSurfels</div>
 
     <div>Some infos about the web surfels project</div>
     <div>
@@ -17,12 +14,12 @@ import { ImageCaptionComponent } from '../../shared/image-caption/image-caption.
       <a href="https://github.com/nbasargin/WebSurfels"> Github </a>
     </div>
 
-    <app-image-container>
+    <div class="image-container">
       <img src="/assets/stable-diffusion-iceland.jpg" class="img-3-columns img-rounded" alt="image" />
       <img src="/assets/stable-diffusion-forest-shrooms.jpg" class="img-3-columns img-rounded" alt="image" />
       <img src="/assets/stable-diffusion-iceland.jpg" class="img-3-columns img-rounded" alt="image" />
-    </app-image-container>
-    <app-image-caption>some text here that describes the images above</app-image-caption>
+    </div>
+    <div class="image-caption">some text here that describes the images above</div>
 
     <div>
       general description: Master's thesis project, rendering of point clouds in the browser, focus on high quality
