@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
-import { ProjectData } from '../page-projects/projects-data';
+import { ProjectDescription } from './project-description';
 
 @Component({
   selector: 'hp-project-card',
@@ -30,5 +30,5 @@ import { ProjectData } from '../page-projects/projects-data';
   styleUrl: 'project-card.component.css',
 })
 export class ProjectCardComponent {
-  projectData = input<ProjectData>();
+  projectData = input<ProjectDescription>();
 }

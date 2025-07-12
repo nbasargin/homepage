@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProjectCardComponent } from '../project-card/project-card.component';
-import { PROJECTS } from './projects-data';
+import { ProjectCardComponent } from '../projects/project-card.component';
+import { ALL_PROJECTS } from '../projects/project-list';
 
 @Component({
   selector: 'hp-page-projects',
@@ -8,8 +8,8 @@ import { PROJECTS } from './projects-data';
   template: `
     <div class="block-title">Projects</div>
     <div class="project-list">
-      @for (project of PROJECTS; track $index) {
-        <hp-project-card class="project-card" [projectData]="project"></hp-project-card>
+      @for (project of ALL_PROJECTS; track $index) {
+        <hp-project-card [projectData]="project"></hp-project-card>
       }
     </div>
   `,
@@ -19,5 +19,5 @@ import { PROJECTS } from './projects-data';
   styleUrl: './projects-page.component.css',
 })
 export class PageProjectsComponent {
-  PROJECTS = PROJECTS;
+  ALL_PROJECTS = ALL_PROJECTS;
 }
