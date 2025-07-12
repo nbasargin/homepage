@@ -2,7 +2,7 @@ import { ProjectDescription } from '../project-description';
 
 export const roboyDescription: ProjectDescription = {
   title: 'Roboy',
-  description: 'TUM Roboy student team',
-  imageUrl: '/assets/stable-diffusion-desert-canyon.jpg',
+  description: 'Roboy student team, robotics, middleware and cognition projects',
+  imageUrl: '/assets/roboy/roboy-preview.jpg',
   // detailsLink: '/details/XY',
 };
