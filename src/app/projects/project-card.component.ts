@@ -11,19 +11,20 @@ import { ProjectDescription } from './project-description';
   template: `
     @if (projectData(); as projectData) {
       <mat-card>
-        <img mat-card-image [src]="projectData.imageUrl" />
+        <img class="project-image" mat-card-image [src]="projectData.imageUrl" />
         <mat-card-header>
           <mat-card-title>{{ projectData.title }} </mat-card-title>
-          <mat-card-subtitle>{{ projectData.subtitle }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>{{ projectData.description }}</p>
         </mat-card-content>
-        <mat-card-actions>
-          @if (projectData.detailsLink) {
-            <button mat-button [routerLink]="projectData.detailsLink">Details</button>
-          }
-        </mat-card-actions>
+        @if (projectData.detailsLink) {
+          <mat-card-actions>
+            @if (projectData.detailsLink) {
+              <button mat-button [routerLink]="projectData.detailsLink">Details</button>
+            }
+          </mat-card-actions>
+        }
       </mat-card>
     }
   `,

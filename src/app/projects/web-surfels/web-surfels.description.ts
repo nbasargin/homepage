@@ -3,6 +3,6 @@ import { ProjectDescription } from '../project-description';
 export const webSurfelsDescription: ProjectDescription = {
   title: 'WebSurfels',
   description: "Master's thesis about high quality point cloud rendering in the browser",
-  imageUrl: '/assets/stable-diffusion-iceland.jpg',
+  imageUrl: '/assets/web-surfels/web-surfels-preview-wide.jpg',
   detailsLink: '/web-surfels',
 };

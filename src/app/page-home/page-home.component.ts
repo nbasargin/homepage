@@ -10,7 +10,7 @@ import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
       <p>Welcome to the homepage! Work in progress...</p>
     </div>
     <div class="block-title">Selected Projects</div>
-    <div class="home-project-list">
+    <div class="project-list">
       @for (project of HIGHLIGHT_PROJECTS; track $index) {
         <hp-project-card [projectData]="project"></hp-project-card>
       }

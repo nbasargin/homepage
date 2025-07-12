@@ -5,6 +5,8 @@
   --global-max-width: 1200px;
   --global-page-spacing: 24px;
   --global-image-spacing: 16px;
+  --card-min-width: 250px;
+  --card-max-width: 350px;
 }
 
 * {
@@ -83,4 +85,11 @@ body {
 
 .img-rounded {
   border-radius: var(--mat-sys-corner-medium);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), max-content));
+  gap: var(--global-page-spacing);
+  justify-content: center;
 }
