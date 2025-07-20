@@ -28,19 +28,19 @@ import { MatIconModule } from '@angular/material/icon';
 
     <div class="block-subtitle">Neuschwanstein Castle Demo</div>
     <div class="image-container">
-      <img src="/assets/stable-diffusion-iceland.jpg" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
     </div>
     <p>Render a large dataset progressively by loading finer levels of detail as the user zooms in.</p>
 
     <div class="block-subtitle">Stanford Dragon Demo</div>
     <div class="image-container">
-      <img src="/assets/stable-diffusion-iceland.jpg" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
     </div>
     <p>Load a PLY file, construct a level of detail tree in the browser, and render it.</p>
 
     <div class="block-subtitle">Google Street View Demo</div>
     <div class="image-container">
-      <img src="/assets/stable-diffusion-iceland.jpg" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
     </div>
     <p>
       Load Google Street View panoramas and depth data, construct a point cloud from the data. Then, crawl adjacent
@@ -50,7 +50,7 @@ import { MatIconModule } from '@angular/material/icon';
 
     <div class="block-subtitle">Sphere Demo</div>
     <div class="image-container">
-      <img src="/assets/stable-diffusion-iceland.jpg" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
     </div>
     <p>Render a sphere with a variable number of points. Mainly used as performance test.</p>
   `,
