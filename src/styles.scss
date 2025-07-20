@@ -71,20 +71,27 @@ body {
   margin: 8px 0 16px;
 }
 
-.image-caption {
-  display: block;
-  margin: 8px 0 16px;
-  font-style: italic;
-  text-align: center;
+.img-rounded {
+  border-radius: var(--mat-sys-corner-medium);
 }
 
-.img-3-columns {
-  width: calc((var(--global-max-width) - var(--global-image-spacing) * 2 - var(--global-page-spacing) * 2 - 1px) / 3);
+.img-h200 {
+  max-height: 200px;
   max-width: 100%;
 }
 
-.img-rounded {
-  border-radius: var(--mat-sys-corner-medium);
+.img-h300 {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.img-h400 {
+  max-height: 400px;
+  max-width: 100%;
+}
+.img-h500 {
+  max-height: 500px;
+  max-width: 100%;
 }
 
 .project-list {
