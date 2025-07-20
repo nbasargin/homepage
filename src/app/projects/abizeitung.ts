@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const abizeitungDescription: ProjectDescription = {
   title: 'Abizeitung',
   description: 'School yearbook design',
-  imageUrl: '/assets/abizeitung/abizeitung-preview.jpg',
+  imageUrl: '/assets/projects/abizeitung-preview.jpg',
   detailsLink: '/abizeitung',
 };
 

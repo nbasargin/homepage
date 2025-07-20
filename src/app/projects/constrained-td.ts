@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const constrainedTDDescription: ProjectDescription = {
   title: 'Constrained Tensor Decompositions',
   description: 'Polarimetric SAR time series analysis',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: '/assets/projects/constrained-td-preview.png',
   detailsLink: '/constrained-td',
 };
 
