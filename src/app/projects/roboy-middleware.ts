@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const roboyMiddlewareDescription: ProjectDescription = {
   title: 'Roboy Middleware',
   description: 'Roboy student team, middleware projects',
-  imageUrl: '/assets/projects/roboy-preview.jpg',
+  imageUrl: '/assets/placeholder.png',
   detailsLink: '/roboy-middleware',
 };
 
