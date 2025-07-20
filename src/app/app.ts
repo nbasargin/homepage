@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header';
+import { FooterComponent } from './footer/footer';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,6 +11,6 @@ import { RouterModule } from '@angular/router';
     <router-outlet></router-outlet>
     <hp-footer></hp-footer>
   `,
-  styleUrl: './app.component.css',
+  styleUrl: './app.css',
 })
 export class AppComponent {}

@@ -18,6 +18,6 @@ import { MatTabsModule } from '@angular/material/tabs';
       </div>
     </nav>
   `,
-  styleUrl: './header.component.css',
+  styleUrl: './header.css',
 })
 export class HeaderComponent {}

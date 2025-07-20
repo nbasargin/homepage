@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'hp-footer',
   imports: [],
   template: ` <div class="footer"></div> `,
-  styleUrl: './footer.component.css',
+  styleUrl: './footer.css',
 })
 export class FooterComponent {}

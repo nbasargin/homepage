@@ -28,7 +28,7 @@ import { ProjectDescription } from '../projects/project-description';
       </mat-card>
     }
   `,
-  styleUrl: 'project-card.component.css',
+  styleUrl: 'project-card.css',
 })
 export class ProjectCardComponent {
   projectData = input<ProjectDescription>();

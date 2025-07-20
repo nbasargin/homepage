@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectCardComponent } from '../project-card/project-card.component';
+import { ProjectCardComponent } from '../project-card/project-card';
 import { ALL_PROJECTS } from '../projects/project-list';
 
 @Component({
@@ -16,7 +16,7 @@ import { ALL_PROJECTS } from '../projects/project-list';
   host: {
     class: 'page-w1200',
   },
-  styleUrl: './projects-page.component.css',
+  styleUrl: './projects-page.css',
 })
 export class PageProjectsComponent {
   ALL_PROJECTS = ALL_PROJECTS;

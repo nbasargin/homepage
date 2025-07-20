@@ -129,6 +129,6 @@ import { Component } from '@angular/core';
   host: {
     class: 'page-w1200',
   },
-  styleUrl: './page-about.component.css',
+  styleUrl: './page-about.css',
 })
 export class PageAboutComponent {}

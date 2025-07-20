@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectCardComponent } from '../project-card/project-card.component';
+import { ProjectCardComponent } from '../project-card/project-card';
 import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
 
 @Component({
@@ -18,7 +18,7 @@ import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
   host: {
     class: 'page-w1200',
   },
-  styleUrl: './page-home.component.css',
+  styleUrl: './page-home.css',
 })
 export class PageHomeComponent {
   HIGHLIGHT_PROJECTS = HIGHLIGHT_PROJECTS;
