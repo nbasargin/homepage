@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
-import { ProjectDescription } from './project-description';
+import { ProjectDescription } from '../projects/project-description';
 
 @Component({
   selector: 'hp-project-card',

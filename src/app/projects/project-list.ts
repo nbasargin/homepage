@@ -1,18 +1,18 @@
 import { ProjectDescription } from './project-description';
-import { abizeitungDescription } from './abizeitung/abizeitung.description';
-import { constrainedTDDescription } from './constrained-td/constrained-td.description';
-import { fsarCropex25Description } from './fsar-cropex-25/fsar-cropex-25.description';
-import { gediTdxDescription } from './gedi-tdx/gedi-tdx.description';
-import { insarSoilMoistureDescription } from './insar-soil-moisture/insar-soil-moisture.description';
-import { modelBasedTDDescription } from './model-based-td/model-based-td.description';
-import { netGyroBoyDescription } from './net-gyro-boy/net-gyro-boy.description';
-import { polsarAutoencodersDescription } from './polsar-autoencoders/polsar-autoencoders.description';
-import { roboyCognitionDescription } from './roboy-cognition/roboy-cognition.description';
-import { roboyMiddlewareDescription } from './roboy-middleware/roboy-middleware.description';
-import { spectrumAnalyzerDescription } from './spectrum-analyzer/spectrum-analyzer.description';
-import { userlaneDescription } from './userlane/userlane.description';
-import { webSphDescription } from './web-sph/web-sph.description';
-import { webSurfelsDescription } from './web-surfels/web-surfels.description';
+import { abizeitungDescription } from './abizeitung';
+import { constrainedTDDescription } from './constrained-td';
+import { fsarCropex25Description } from './fsar-cropex-25';
+import { gediTdxDescription } from './gedi-tdx';
+import { insarSoilMoistureDescription } from './insar-soil-moisture';
+import { modelBasedTDDescription } from './model-based-td';
+import { netGyroBoyDescription } from './net-gyro-boy';
+import { polsarAutoencodersDescription } from './polsar-autoencoders';
+import { roboyCognitionDescription } from './roboy-cognition';
+import { roboyMiddlewareDescription } from './roboy-middleware';
+import { spectrumAnalyzerDescription } from './spectrum-analyzer';
+import { userlaneDescription } from './userlane';
+import { webSphDescription } from './web-sph';
+import { webSurfelsDescription } from './web-surfels';
 
 export const ALL_PROJECTS: Array<ProjectDescription> = [
   abizeitungDescription,

@@ -3,9 +3,17 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ProjectDescription } from './project-description';
+
+export const webSurfelsDescription: ProjectDescription = {
+  title: 'WebSurfels',
+  description: "Master's thesis, High-Quality Point Cloud Rendering in WebGL",
+  imageUrl: '/assets/web-surfels/web-surfels-preview.jpg',
+  detailsLink: '/web-surfels',
+};
 
 @Component({
-  selector: 'hp-web-surfels',
+  selector: 'hp-projects-web-surfels',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule],
   template: `
     <div class="block-title">WebSurfels</div>
@@ -57,6 +65,6 @@ import { MatIconModule } from '@angular/material/icon';
   host: {
     class: 'page-w800',
   },
-  styleUrl: 'web-surfels.component.css',
+  styles: '',
 })
 export class WebSurfelsComponent {}

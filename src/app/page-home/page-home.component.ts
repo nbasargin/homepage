@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectCardComponent } from '../projects/project-card.component';
+import { ProjectCardComponent } from '../project-card/project-card.component';
 import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
 
 @Component({
