@@ -9,6 +9,7 @@ import { netGyroBoyDescription } from './net-gyro-boy/net-gyro-boy.description';
 import { polsarAutoencodersDescription } from './polsar-autoencoders/polsar-autoencoders.description';
 import { roboyCognitionDescription } from './roboy-cognition/roboy-cognition.description';
 import { roboyMiddlewareDescription } from './roboy-middleware/roboy-middleware.description';
+import { spectrumAnalyzerDescription } from './spectrum-analyzer/spectrum-analyzer.description';
 import { userlaneDescription } from './userlane/userlane.description';
 import { webSphDescription } from './web-sph/web-sph.description';
 import { webSurfelsDescription } from './web-surfels/web-surfels.description';
@@ -24,6 +25,7 @@ export const ALL_PROJECTS: Array<ProjectDescription> = [
   polsarAutoencodersDescription,
   roboyCognitionDescription,
   roboyMiddlewareDescription,
+  spectrumAnalyzerDescription,
   userlaneDescription,
   webSphDescription,
   webSurfelsDescription,
