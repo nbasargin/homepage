@@ -127,7 +127,7 @@ import { Component } from '@angular/core';
     TODO
   `,
   host: {
-    class: 'page-width',
+    class: 'page-w1200',
   },
   styleUrl: './page-about.component.css',
 })

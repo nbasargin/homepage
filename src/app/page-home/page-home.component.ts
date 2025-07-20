@@ -16,7 +16,7 @@ import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
       }
     </div>`,
   host: {
-    class: 'page-width',
+    class: 'page-w1200',
   },
   styleUrl: './page-home.component.css',
 })

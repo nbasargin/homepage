@@ -14,7 +14,7 @@ import { ALL_PROJECTS } from '../projects/project-list';
     </div>
   `,
   host: {
-    class: 'page-width',
+    class: 'page-w1200',
   },
   styleUrl: './projects-page.component.css',
 })

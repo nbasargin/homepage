@@ -42,7 +42,21 @@ body {
 
 /* utility styles */
 
-.page-width {
+.navbar-w1200 {
+  display: block;
+  max-width: var(--global-max-width);
+  padding: 0 var(--global-page-spacing);
+  margin: 0 auto;
+}
+
+.page-w800 {
+  display: block;
+  max-width: 800px;
+  padding: 0 var(--global-page-spacing);
+  margin: 0 auto;
+}
+
+.page-w1200 {
   display: block;
   max-width: var(--global-max-width);
   padding: 0 var(--global-page-spacing);
@@ -61,6 +75,12 @@ body {
   font-size: 18px;
   font-weight: bold;
   margin: 18px 0;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
 }
 
 .image-container {
