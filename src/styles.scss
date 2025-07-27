@@ -74,7 +74,7 @@ body {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  margin: 18px 0;
+  margin: 32px 0 16px;
 }
 
 .button-row {
@@ -114,6 +114,7 @@ body {
   max-height: 400px;
   max-width: 100%;
 }
+
 .img-h500 {
   max-height: 500px;
   max-width: 100%;
@@ -124,4 +125,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), max-content));
   gap: var(--global-page-spacing);
   justify-content: center;
+}
+
+.warning-note {
+  color: var(--mat-sys-error);
 }
