@@ -34,4 +34,4 @@ export const TODO_PROJECTS: Array<ProjectDescription> = [
   userlaneDescription,
 ];
 
-export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [roboyMiddlewareDescription, webSurfelsDescription];
+export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription];

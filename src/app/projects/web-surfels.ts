@@ -19,8 +19,8 @@ export const webSurfelsDescription: ProjectDescription = {
     <div class="block-title">WebSurfels</div>
 
     <p>
-      Master's thesis project, rendering of point clouds in the browser, focus on high quality rendering. Smooth color
-      blending is achieved with 2D surface splatting. Each point is rendered as a disc and the colors are blended
+      Master's thesis project, rendering of point clouds in the browser, with a focus on high quality rendering. Smooth
+      color blending is achieved with 2D surface splatting. Each point is rendered as a disc and the colors are blended
       together for adjacent discs.
     </p>
     <div class="button-row">
@@ -35,10 +35,20 @@ export const webSurfelsDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Neuschwanstein Castle Demo</div>
+
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/projects/web-surfels-neuschwanstein-01-h500.jpg" class="img-rounded img-h250" alt="image" />
+      <img src="/assets/projects/web-surfels-neuschwanstein-02-h500.jpg" class="img-rounded img-h250" alt="image" />
     </div>
-    <p>Render a large dataset progressively by loading finer levels of detail as the user zooms in.</p>
+    <p>
+      Render a large point cloud dataset of Neuschwanstein Castle with more than 30 million points. The dataset was
+      preprocessed to create several levels of detail.
+    </p>
+
+    <div class="image-container">
+      <img src="/assets/projects/web-surfels-neuschwanstein-03-h500.jpg" class="img-rounded img-h250" alt="image" />
+    </div>
+    <p>Appropriate levels of detail are progressively loaded as the user zooms in and out.</p>
 
     <div class="block-subtitle">Stanford Dragon Demo</div>
     <div class="image-container">
@@ -65,6 +75,21 @@ export const webSurfelsDescription: ProjectDescription = {
   host: {
     class: 'page-w800',
   },
-  styles: '',
+  styles: `
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .image-row-block {
+      height: 40vh;
+      flex-grow: 1;
+    }
+    .image-row-block img {
+      max-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+  `,
 })
 export class WebSurfelsComponent {}
