@@ -18,11 +18,14 @@ export const webSurfelsDescription: ProjectDescription = {
   template: `
     <div class="block-title">WebSurfels</div>
 
+    <p>Master's thesis project: High-Quality Point Cloud Rendering in WebGL</p>
     <p>
-      Master's thesis project, rendering of point clouds in the browser, with a focus on high quality rendering. Smooth
-      color blending is achieved with 2D surface splatting. Each point is rendered as a disc and the colors are blended
-      together for adjacent discs.
+      The thesis explores the use of WebGL for high-quality rendering of large point clouds at interactive frame rates
+      in the browser. The focus is on the accurate reconstruction of the sampled surfaces from any camera position
+      despite missing connectivity information. The renderer achieves high visual quality with the surface splatting
+      technique, where colors of adjacent normal-aligned 2D splats are smoothly blended together.
     </p>
+
     <div class="button-row">
       <a mat-button="elevated" href="https://nbasargin.github.io/WebSurfels-Demo/" target="_blank">
         <mat-icon>open_in_new</mat-icon>
@@ -35,42 +38,85 @@ export const webSurfelsDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Neuschwanstein Castle Demo</div>
-
+    <p>
+      To render large datasets with millions of points, a hierarchical level-of-detail (LOD) tree is used. This
+      structure is constructed from the original data in a preprocessing step using an octree and stores LOD
+      representations at different resolutions.
+    </p>
     <div class="image-container">
-      <img src="/assets/projects/web-surfels-neuschwanstein-01-h500.jpg" class="img-rounded img-h250" alt="image" />
-      <img src="/assets/projects/web-surfels-neuschwanstein-02-h500.jpg" class="img-rounded img-h250" alt="image" />
+      <img
+        src="/assets/projects/web-surfels-neuschwanstein-01-h500.jpg"
+        class="img-rounded img-h250"
+        alt="Rendered Neuschwanstein Castle 1"
+      />
+      <img
+        src="/assets/projects/web-surfels-neuschwanstein-02-h500.jpg"
+        class="img-rounded img-h250"
+        alt="Rendered Neuschwanstein Castle 2"
+      />
     </div>
     <p>
-      Render a large point cloud dataset of Neuschwanstein Castle with more than 30 million points. The dataset was
-      preprocessed to create several levels of detail.
+      The Neuschwanstein Castle dataset contains more than 30 million points. The data is streamed to the client on
+      demand, reducing the loading times. Only the necessary parts of the scene are rendered in high resolution to
+      improve performance. Appropriate levels-of-detail are dynamically chosen as the user zooms in and out.
     </p>
-
-    <div class="image-container">
-      <img src="/assets/projects/web-surfels-neuschwanstein-03-h500.jpg" class="img-rounded img-h250" alt="image" />
-    </div>
-    <p>Appropriate levels of detail are progressively loaded as the user zooms in and out.</p>
 
     <div class="block-subtitle">Stanford Dragon Demo</div>
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
+      <img
+        src="/assets/projects/web-surfels-dragon-01-h500.jpg"
+        class="img-rounded img-h200"
+        alt="Low-resolution dragon"
+      />
+      <img
+        src="/assets/projects/web-surfels-dragon-02-h500.jpg"
+        class="img-rounded img-h200"
+        alt="Medium-resolution dragon"
+      />
+      <img
+        src="/assets/projects/web-surfels-dragon-03-h500.jpg"
+        class="img-rounded img-h200"
+        alt="High-resolution dragon"
+      />
     </div>
-    <p>Load a PLY file, construct a level of detail tree in the browser, and render it.</p>
+    <p>
+      The Stanford Dragon demo showcases construction of a level-of-detail tree from a PLY file directly in the browser.
+      Here, 1210, 27869, and 435545 splats are rendered for different levels-of-detail.
+    </p>
 
     <div class="block-subtitle">Google Street View Demo</div>
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
+      <img
+        src="/assets/projects/web-surfels-street-view-01-h500.jpg"
+        class="img-rounded img-h200"
+        alt="Rendered Street View 1"
+      />
+      <img
+        src="/assets/projects/web-surfels-street-view-02-h500.jpg"
+        class="img-rounded img-h200"
+        alt="Rendered Street View 2"
+      />
     </div>
     <p>
-      Load Google Street View panoramas and depth data, construct a point cloud from the data. Then, crawl adjacent
-      panoramas and expand the point cloud to reconstruct parts of the city. Note: the street view API has changed since
-      2020, so the demo is running on the old cached version of the data.
+      The Google Street View demo demonstrates the integration of the renderer with an existing service. The demo loads
+      the publicly available data from the Google Street View API and reconstructs local point clouds from panoramas.
+      Then, the demo crawls adjacent panoramas and progressively expands the point cloud to reconstruct whole city
+      districts directly in the browser.
+    </p>
+    <p class="warning-note">
+      Note: the street view API has changed since 2020, so the demo is running on the old cached data.
     </p>
 
     <div class="block-subtitle">Sphere Demo</div>
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
+      <img src="/assets/projects/web-surfels-sphere-01-h500.jpg" class="img-rounded img-h200" alt="Rendered Sphere 1" />
+      <img src="/assets/projects/web-surfels-sphere-02-h500.jpg" class="img-rounded img-h200" alt="Rendered Sphere 2" />
+      <img src="/assets/projects/web-surfels-sphere-03-h500.jpg" class="img-rounded img-h200" alt="Rendered Sphere 3" />
     </div>
-    <p>Render a sphere with a variable number of points. Mainly used as performance test.</p>
+    <p>
+      The sphere demo renders a sphere with a variable number of points, splat sizes, and color blending options. The
+      demo is mainly used for performance testing and visual quality comparisons.
+    </p>
   `,
   host: {
     class: 'page-w800',
