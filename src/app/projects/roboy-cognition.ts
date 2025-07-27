@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const roboyCognitionDescription: ProjectDescription = {
   title: 'Roboy Cognition',
   description: 'Roboy student team, cognition projects',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: '/assets/projects/roboy-cognition-preview.jpg',
   detailsLink: '/roboy-cognition',
 };
 
