@@ -15,6 +15,13 @@ import { webSphDescription } from './web-sph';
 import { webSurfelsDescription } from './web-surfels';
 
 export const ALL_PROJECTS: Array<ProjectDescription> = [
+  webSurfelsDescription,
+  webSphDescription,
+  roboyCognitionDescription,
+  roboyMiddlewareDescription,
+];
+
+export const TODO_PROJECTS: Array<ProjectDescription> = [
   abizeitungDescription,
   constrainedTDDescription,
   fsarCropex25Description,
@@ -23,12 +30,8 @@ export const ALL_PROJECTS: Array<ProjectDescription> = [
   modelBasedTDDescription,
   netGyroBoyDescription,
   polsarAutoencodersDescription,
-  roboyCognitionDescription,
-  roboyMiddlewareDescription,
   spectrumAnalyzerDescription,
   userlaneDescription,
-  webSphDescription,
-  webSurfelsDescription,
 ];
 
 export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [roboyMiddlewareDescription, webSurfelsDescription];
