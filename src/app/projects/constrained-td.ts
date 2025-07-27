@@ -6,8 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 
 export const constrainedTDDescription: ProjectDescription = {
-  title: 'Constrained Tensor Decompositions',
-  description: 'Polarimetric SAR time series analysis',
+  title: 'Constrained TD',
+  description: 'Constrained tensor decompositions (TD) for SAR time series analysis',
   imageUrl: '/assets/projects/constrained-td-preview.png',
   detailsLink: '/constrained-td',
 };

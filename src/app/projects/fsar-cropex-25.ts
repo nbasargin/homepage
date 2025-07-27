@@ -6,9 +6,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 
 export const fsarCropex25Description: ProjectDescription = {
-  title: 'AgriROSE-L / CROPEX 2025',
+  title: 'CROPEX 2025',
   description: 'Experimental F-SAR airborne campaign',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: '/assets/projects/fsar-cropex-25-preview.jpg',
   detailsLink: '/fsar-cropex-25',
 };
 
@@ -16,9 +16,9 @@ export const fsarCropex25Description: ProjectDescription = {
   selector: 'hp-projects-fsar-cropex25',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule],
   template: `
-    <div class="block-title">AgriROSE-L / CROPEX 2025 Campaign</div>
+    <div class="block-title">F-SAR CROPEX 2025 Campaign</div>
 
-    <p>AgriROSE-L / CROPEX 2025 Campaign description</p>
+    <p>F-SAR CROPEX 2025 Campaign description</p>
     <div class="button-row">
       <a mat-button="elevated" href="https://todo.com" target="_blank">
         <mat-icon>open_in_new</mat-icon>

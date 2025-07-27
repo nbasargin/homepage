@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 
 export const modelBasedTDDescription: ProjectDescription = {
-  title: 'Model-Based Tensor Decompositions',
+  title: 'Model-Based TD',
   description: 'Geophysical parameter estimation from multidimensional SAR data',
   imageUrl: '/assets/placeholder.png',
   detailsLink: '/model-based-td',
