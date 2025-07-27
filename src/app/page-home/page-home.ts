@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card';
-import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../projects/project-list';
+import { ALL_PROJECTS, HIGHLIGHT_PROJECTS } from '../project-list';
 
 @Component({
   selector: 'hp-page-home',
