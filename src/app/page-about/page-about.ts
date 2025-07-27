@@ -74,8 +74,8 @@ import { Component } from '@angular/core';
         <div>2017-10 - 2020-07</div>
       </div>
       <div>
-        <div>Master of Informatics</div>
-        <div>Thesis: High-Quality Point Cloud Rendering in WebGL, grade: 1.0</div>
+        <div>Master of Informatics, grade: 1.0</div>
+        <div>Thesis: High-Quality Point Cloud Rendering in WebGL</div>
       </div>
 
       <div>
@@ -91,8 +91,8 @@ import { Component } from '@angular/core';
         <div>2014-10 - 2017-10</div>
       </div>
       <div>
-        <div>Bachelor of Informatics</div>
-        <div>Thesis: Interactive simulation of floods using the SPH method, grade: 1.1</div>
+        <div>Bachelor of Informatics, grade: 1.1</div>
+        <div>Thesis: Interactive simulation of floods using the SPH method</div>
       </div>
 
       <div>
@@ -115,7 +115,7 @@ import { Component } from '@angular/core';
         <div>until 2014-06</div>
       </div>
       <div>
-        <div>Maria-Theresia-Gymnasium MTG, Munich</div>
+        <div>Maria-Theresia-Gymnasium</div>
         <div>Abitur, grade: 1.1</div>
       </div>
     </div>
