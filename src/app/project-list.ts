@@ -14,7 +14,7 @@ import { userlaneDescription } from './projects/userlane';
 import { webSphDescription } from './projects/web-sph';
 import { webSurfelsDescription } from './projects/web-surfels';
 
-export const ALL_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription];
+export const ALL_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription, physicalAutoencodersDescription];
 
 export const TODO_PROJECTS: Array<ProjectDescription> = [
   webSphDescription,
@@ -27,9 +27,8 @@ export const TODO_PROJECTS: Array<ProjectDescription> = [
   insarSoilMoistureDescription,
   modelBasedTDDescription,
   netGyroBoyDescription,
-  physicalAutoencodersDescription,
   spectrumAnalyzerDescription,
   userlaneDescription,
 ];
 
-export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription];
+export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription, physicalAutoencodersDescription];
