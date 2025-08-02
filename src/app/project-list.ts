@@ -6,7 +6,7 @@ import { gediTdxDescription } from './projects/gedi-tdx';
 import { insarSoilMoistureDescription } from './projects/insar-soil-moisture';
 import { modelBasedTDDescription } from './projects/model-based-td';
 import { netGyroBoyDescription } from './projects/net-gyro-boy';
-import { polsarAutoencodersDescription } from './projects/polsar-autoencoders';
+import { physicalAutoencodersDescription } from './projects/physical-autoencoders';
 import { roboyCognitionDescription } from './projects/roboy-cognition';
 import { roboyMiddlewareDescription } from './projects/roboy-middleware';
 import { spectrumAnalyzerDescription } from './projects/spectrum-analyzer';
@@ -27,7 +27,7 @@ export const TODO_PROJECTS: Array<ProjectDescription> = [
   insarSoilMoistureDescription,
   modelBasedTDDescription,
   netGyroBoyDescription,
-  polsarAutoencodersDescription,
+  physicalAutoencodersDescription,
   spectrumAnalyzerDescription,
   userlaneDescription,
 ];

@@ -9,7 +9,7 @@ import { GediTdxComponent } from './projects/gedi-tdx';
 import { InsarSoilMoistureComponent } from './projects/insar-soil-moisture';
 import { ModelBasedTDComponent } from './projects/model-based-td';
 import { NetGyroBoyComponent } from './projects/net-gyro-boy';
-import { PolsarAutoencodersComponent } from './projects/polsar-autoencoders';
+import { PhysicalAutoencodersComponent } from './projects/physical-autoencoders';
 import { RoboyCognitionComponent } from './projects/roboy-cognition';
 import { RoboyMiddlewareComponent } from './projects/roboy-middleware';
 import { SpectrumAnalyzerComponent } from './projects/spectrum-analyzer';
@@ -61,8 +61,8 @@ export const routes: Routes = [
     component: NetGyroBoyComponent,
   },
   {
-    path: 'polsar-autoencoders',
-    component: PolsarAutoencodersComponent,
+    path: 'physical-autoencoders',
+    component: PhysicalAutoencodersComponent,
   },
   {
     path: 'roboy-cognition',
