@@ -55,7 +55,7 @@ import { Component } from '@angular/core';
       <div>2016-10 - 2020-07</div>
       <div>best.in.tum, best students of the Department of Informatics</div>
       <div>2014-10 - 2020-07</div>
-      <div>Max Weber Program (MWP), awarded for academic achievements</div>
+      <div>Max Weber Program (MWP) Scholarship, awarded for academic achievements</div>
     </div>
 
     <div class="block-subtitle">Education</div>
@@ -74,7 +74,8 @@ import { Component } from '@angular/core';
         <div>2017-10 - 2020-07</div>
       </div>
       <div>
-        <div>Master of Informatics, grade: 1.0</div>
+        <div>Master of Informatics</div>
+        <div>Passed with high distinction, grade: 1.0</div>
         <div>Thesis: High-Quality Point Cloud Rendering in WebGL</div>
       </div>
 
@@ -91,7 +92,8 @@ import { Component } from '@angular/core';
         <div>2014-10 - 2017-10</div>
       </div>
       <div>
-        <div>Bachelor of Informatics, grade: 1.1</div>
+        <div>Bachelor of Informatics</div>
+        <div>Passed with high distinction, grade: 1.1</div>
         <div>Thesis: Interactive simulation of floods using the SPH method</div>
       </div>
 
