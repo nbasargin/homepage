@@ -7,7 +7,7 @@ import { ProjectDescription } from './project-description';
 
 export const webSurfelsDescription: ProjectDescription = {
   title: 'WebSurfels',
-  description: "Master's thesis, High-Quality Point Cloud Rendering in WebGL",
+  description: 'High-Quality Point Cloud Rendering in WebGL',
   imageUrl: '/assets/projects/web-surfels-preview.jpg',
   detailsLink: '/web-surfels',
 };
@@ -28,11 +28,11 @@ export const webSurfelsDescription: ProjectDescription = {
 
     <div class="button-row">
       <a mat-button="elevated" href="https://nbasargin.github.io/WebSurfels-Demo/" target="_blank">
-        <mat-icon>open_in_new</mat-icon>
+        <mat-icon>rocket_launch</mat-icon>
         Demo
       </a>
       <a mat-button="elevated" href="https://github.com/nbasargin/WebSurfels" target="_blank">
-        <mat-icon>open_in_new</mat-icon>
+        <mat-icon svgIcon="github"></mat-icon>
         GitHub
       </a>
     </div>
