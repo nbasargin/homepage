@@ -4,10 +4,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { ProjectDescription } from '../projects/project-description';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'hp-project-card',
-  imports: [CommonModule, MatButtonModule, MatCardModule, RouterModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule, RouterModule],
   template: `
     @if (projectData(); as projectData) {
       <mat-card>
@@ -21,7 +22,7 @@ import { ProjectDescription } from '../projects/project-description';
         @if (projectData.detailsLink) {
           <mat-card-actions>
             @if (projectData.detailsLink) {
-              <button mat-button [routerLink]="projectData.detailsLink">Details</button>
+              <button mat-button [routerLink]="projectData.detailsLink"><mat-icon>read_more</mat-icon> Details</button>
             }
           </mat-card-actions>
         }
