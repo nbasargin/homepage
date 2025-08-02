@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const polsarAutoencodersDescription: ProjectDescription = {
   title: 'PolSAR Autoencoders',
   description: 'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: '/assets/projects/polsar-autoencoders-preview.png',
   detailsLink: '/polsar-autoencoders',
 };
 
