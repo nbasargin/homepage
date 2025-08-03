@@ -129,3 +129,22 @@ body {
 .warning-note {
   color: var(--mat-sys-error);
 }
+
+.mat-elevation-2 {
+  @include mat.elevation(2);
+}
+.mat-elevation-4 {
+  @include mat.elevation(4);
+}
+.mat-elevation-8 {
+  @include mat.elevation(8);
+}
+.mat-elevation-12 {
+  @include mat.elevation(12);
+}
+.mat-elevation-16 {
+  @include mat.elevation(16);
+}
+.mat-elevation-24 {
+  @include mat.elevation(24);
+}
