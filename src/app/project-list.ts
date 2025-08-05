@@ -14,14 +14,17 @@ import { userlaneDescription } from './projects/userlane';
 import { webSphDescription } from './projects/web-sph';
 import { webSurfelsDescription } from './projects/web-surfels';
 
-export const ALL_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription, physicalAutoencodersDescription];
+export const ALL_PROJECTS: Array<ProjectDescription> = [
+  physicalAutoencodersDescription,
+  webSurfelsDescription,
+  constrainedTDDescription,
+];
 
 export const TODO_PROJECTS: Array<ProjectDescription> = [
   webSphDescription,
   roboyCognitionDescription,
   roboyMiddlewareDescription,
   abizeitungDescription,
-  constrainedTDDescription,
   fsarCropex25Description,
   gediTdxDescription,
   insarSoilMoistureDescription,
@@ -31,4 +34,8 @@ export const TODO_PROJECTS: Array<ProjectDescription> = [
   userlaneDescription,
 ];
 
-export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [webSurfelsDescription, physicalAutoencodersDescription];
+export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [
+  physicalAutoencodersDescription,
+  webSurfelsDescription,
+  constrainedTDDescription,
+];
