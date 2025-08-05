@@ -91,10 +91,10 @@ export const physicalAutoencodersDescription: ProjectDescription = {
     <p>The conference took place in Nashville, Tennessee, USA. Here are some impressions.</p>
 
     <div class="image-container">
-      <img src="/assets/projects/physical-autoencoders-cvpr-01.jpg" class="img-rounded img-h250" alt="image" />
-      <img src="/assets/projects/physical-autoencoders-cvpr-02.jpg" class="img-rounded img-h250" alt="image" />
-      <img src="/assets/projects/physical-autoencoders-cvpr-04.jpg" class="img-rounded img-h250" alt="image" />
-      <img src="/assets/projects/physical-autoencoders-cvpr-03.jpg" class="img-rounded img-h250" alt="image" />
+      <img src="/assets/projects/physical-autoencoders-cvpr-01.jpg" class="img-rounded img-h250" alt="Social event" />
+      <img src="/assets/projects/physical-autoencoders-cvpr-02.jpg" class="img-rounded img-h250" alt="Tech demos" />
+      <img src="/assets/projects/physical-autoencoders-cvpr-04.jpg" class="img-rounded img-h250" alt="Poster session" />
+      <img src="/assets/projects/physical-autoencoders-cvpr-03.jpg" class="img-rounded img-h250" alt="Keynotes" />
     </div>
   `,
   host: {
