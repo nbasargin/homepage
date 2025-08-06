@@ -10,8 +10,7 @@ import { InsarSoilMoistureComponent } from './projects/insar-soil-moisture';
 import { ModelBasedTDComponent } from './projects/model-based-td';
 import { NetGyroBoyComponent } from './projects/net-gyro-boy';
 import { PhysicalAutoencodersComponent } from './projects/physical-autoencoders';
-import { RoboyCognitionComponent } from './projects/roboy-cognition';
-import { RoboyMiddlewareComponent } from './projects/roboy-middleware';
+import { RoboyComponent } from './projects/roboy';
 import { SpectrumAnalyzerComponent } from './projects/spectrum-analyzer';
 import { WebSurfelsComponent } from './projects/web-surfels';
 import { UserlaneComponent } from './projects/userlane';
@@ -65,12 +64,8 @@ export const routes: Routes = [
     component: PhysicalAutoencodersComponent,
   },
   {
-    path: 'roboy-cognition',
-    component: RoboyCognitionComponent,
-  },
-  {
-    path: 'roboy-middleware',
-    component: RoboyMiddlewareComponent,
+    path: 'roboy',
+    component: RoboyComponent,
   },
   {
     path: 'spectrum-analyzer',

@@ -7,8 +7,7 @@ import { insarSoilMoistureDescription } from './projects/insar-soil-moisture';
 import { modelBasedTDDescription } from './projects/model-based-td';
 import { netGyroBoyDescription } from './projects/net-gyro-boy';
 import { physicalAutoencodersDescription } from './projects/physical-autoencoders';
-import { roboyCognitionDescription } from './projects/roboy-cognition';
-import { roboyMiddlewareDescription } from './projects/roboy-middleware';
+import { roboyDescription } from './projects/roboy';
 import { spectrumAnalyzerDescription } from './projects/spectrum-analyzer';
 import { userlaneDescription } from './projects/userlane';
 import { webSphDescription } from './projects/web-sph';
@@ -22,8 +21,7 @@ export const ALL_PROJECTS: Array<ProjectDescription> = [
 
 export const TODO_PROJECTS: Array<ProjectDescription> = [
   webSphDescription,
-  roboyCognitionDescription,
-  roboyMiddlewareDescription,
+  roboyDescription,
   abizeitungDescription,
   fsarCropex25Description,
   gediTdxDescription,
