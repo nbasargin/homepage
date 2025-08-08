@@ -18,6 +18,10 @@ export const roboyDescription: ProjectDescription = {
   template: `
     <div class="block-title">Roboy</div>
 
+    <div class="image-container">
+      <img src="/assets/projects/roboy-logo-h400.png" class="img-rounded img-h200" alt="Roboy logo" />
+    </div>
+
     <p>
       I had a chance to join the Roboy student team in 2017 and actively participated in middleware and cognition
       projects for three semesters. Apart from the main projects, the team organized several events and activities, such
@@ -45,6 +49,7 @@ export const roboyDescription: ProjectDescription = {
         class="img-rounded img-h200"
         alt="lighthouses and sensors"
       />
+      <img src="/assets/projects/roboy-de0-nano-h400.jpg" class="img-rounded img-h200" alt="DE0-nano board" />
     </div>
 
     <p>
@@ -53,11 +58,6 @@ export const roboyDescription: ProjectDescription = {
       processing algorithms on an FPGA to enable real-time tracking.
     </p>
 
-    <div class="image-container">
-      <div>fpga</div>
-      <div>more images</div>
-    </div>
-
     <div class="button-row">
       <a mat-button="elevated" href="https://arxiv.org/abs/2310.01943" target="_blank">
         <mat-icon fontIcon="open_in_new"></mat-icon>
@@ -65,51 +65,68 @@ export const roboyDescription: ProjectDescription = {
       </a>
       <a mat-button="elevated" href="https://github.com/Roboy/roboy_fpga_code" target="_blank">
         <mat-icon svgIcon="github"></mat-icon>
-        Roboy FPGA GitHub
+        Roboy FPGA Code
       </a>
     </div>
-
-    <!--    
-    2017-02-09 Roboy meetup roboy v1
-    2017-04-28+ HackRoboy 2
-    2017-05-03 MakerSpace
-    2017-06-03 Roboy Grillen
-    2017-06-26 Roboy
-    2017-07 Roboy & MakerSpace
-    -->
 
     <div class="block-subtitle">Robotics Lab Tour</div>
     <p>
       After summer semester 2017, the Roboy team organized a trip to visit several robotics labs in Germany, France, and
-      Switzerland.
+      Switzerland. We visited HBP Neuromorphic Computing (Heidelberg), HBP Neurorobotics (Karlsruhe), High Performance
+      Humanoid Technologies Lab (Karlsruhe), Aldebaran Robotics (Paris), Sony CSL (Paris), RoBioSS (Poitiers),
+      Génération Robots (Mérignac), Flowers Lab (Talence), and EPFL BioRob (Lausanne).
     </p>
-    <!--    
-    2017-09-25 Roboy, Heidelberg etc
-    -->
+
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h200" alt="image" />
+      <img
+        src="/assets/projects/roboy-lab-tour-karlsruhe-h400.jpg"
+        class="img-rounded img-h200"
+        alt="Lauron robot, HBP Neurorobotics, Karlsruhe"
+      />
+      <img
+        src="/assets/projects/roboy-lab-tour-robioss-h400.jpg"
+        class="img-rounded img-h200"
+        alt="Robotic hand, RoBioSS, Poitiers"
+      />
+      <img
+        src="/assets/projects/roboy-lab-tour-talence-h400.jpg"
+        class="img-rounded img-h200"
+        alt="Poppy robots, Flowers Lab, Talence"
+      />
+      <img
+        src="/assets/projects/roboy-lab-tour-epfl-h400.jpg"
+        class="img-rounded img-h200"
+        alt="Pleurobot, EPFL BioRob, Lausanne"
+      />
     </div>
 
     <div class="block-subtitle">Roboy Dialog System</div>
-    <p>In the winter semester 2017-2018, I joined the cognition team and worked on the Roboy Dialog System.</p>
+    <p>
+      In the winter semester 2017-2018, I joined the cognition team and worked on the Roboy Dialog System. Before LLMs
+      became popular, we focused on rule-based approaches and state machines for dialog management.
+    </p>
     <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h200" alt="image" />
+      <img src="/assets/projects/roboy-dialog-states-h400.jpg" class="img-rounded img-h200" alt="State transitions" />
     </div>
 
     <p>
-      During the following semesters, the dialog system was continuously improved into the Ravestate library. Here, my
-      main contribution was a web-based interface for real-time visualization of state changes and transitions. A
-      summary of the Ravestate system was later published as a preprint on arXiv.
+      During the following semesters, the dialog system was improved and rewritten from Java to Python. Here, my main
+      contribution was a web-based interface for real-time visualization of state changes and transitions. A summary of
+      the Ravestate system was later published as a preprint on arXiv.
     </p>
 
     <div class="button-row">
       <a mat-button="elevated" href="https://arxiv.org/abs/2310.01943" target="_blank">
         <mat-icon fontIcon="open_in_new"></mat-icon>
-        Ravestate Paper
+        Ravestate Summary
       </a>
       <a mat-button="elevated" href="https://github.com/Roboy/ravestate" target="_blank">
         <mat-icon svgIcon="github"></mat-icon>
-        Ravestate GitHub
+        Ravestate
+      </a>
+      <a mat-button="elevated" href="https://github.com/Roboy/roboy_dialog" target="_blank">
+        <mat-icon svgIcon="github"></mat-icon>
+        Roboy Dialog
       </a>
     </div>
 
@@ -124,29 +141,51 @@ export const roboyDescription: ProjectDescription = {
     2018-03-29 Roboy Hotpot
     -->
 
+    <div class="block-subtitle">Building Roboy 2.0</div>
+
+    <p>
+      Winter semester 2017-2018 was also the time when the Roboy team started building Roboy 2.0. Many parts have been
+      3D printed, and the team worked on the mechanical design, electronics, and software. Roboy 2.0 was unveiled at the
+      Hannover Messe in April 2018. As of 2025, Roboy 2.0 is on permanent display at the Deutsches Museum in Munich.
+    </p>
+
+    <div class="image-container">
+      <img
+        src="/assets/projects/roboy-junior-and-v2-h400.jpg"
+        class="img-rounded img-h200"
+        alt="Roboy Junior and Roboy v2.0"
+      />
+      <img src="/assets/projects/roboy-v2-pelvis-h400.jpg" class="img-rounded img-h200" alt="3D printed pelvis" />
+      <img src="/assets/projects/roboy-v2-body-h400.jpg" class="img-rounded img-h200" alt="Assembled body" />
+    </div>
+
     <div class="block-subtitle">Supervising Student Teams</div>
 
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h200" alt="image" />
-    </div>
-    <p>Summer semester 2018: supervising teams, participating at exhibitions</p>
-    <p>Team supervision: BotBoy & TalkToTwo</p>
-    <p>2018-04-25 Roboy, Hannover</p>
-    <p>2018-06-21 Automatica</p>
-    <p>Mid-semester events: 2018-04 Roboy & UTUM - nice pics, 2018-06 Roboy & UTUM - safe ftopus</p>
-
-    <div class="block-subtitle">Later activities</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h200" alt="image" />
-    </div>
-    <p>Exchange semester, no active participation at roboy for a while</p>
-    <p>Visiting and helping with specific events</p>
     <p>
-      2019-03-07 Roboy Riksha Finals, 2019-05-05 Roboy Hackathon, 2019-07-18 Roboy Finals, 2019-07-26 Roboy Rave Party
+      In the summer semester 2018 I had a chance to supervise two student teams: BotBoy and TalkToTwo. BotBoy focused on
+      refining the dialog system and implementation of a Telegram chatbot. TalkToTwo worked on improving the audio
+      processing and distinguishing between different speakers.
     </p>
-    <p>2019-09-06+ Roboy Finals SS19 & Techfest, 2020-03-09 Roboy, 2020-09-05 Roboy Finals SS20</p>
 
-    <p>Roboy 2.0 in Deutsches Museum</p>
+    <!--
+    SS18 events:
+    2018-04-25 Roboy, Hannover
+    2018-06-21 Automatica
+    2018-04 Roboy & UTUM - nice pics
+    2018-06 Roboy & UTUM - safe ftopus
+    -->
+
+    <!--
+    Later events:
+    Exchange semester, no active participation at roboy for a while, Visiting and helping with specific events
+    2019-03-07 Roboy Riksha Finals
+    2019-05-05 Roboy Hackathon
+    2019-07-18 Roboy Finals
+    2019-07-26 Roboy Rave Party
+    2019-09-06+ Roboy Finals SS19 & Techfest
+    2020-03-09 Roboy
+    2020-09-05 Roboy Finals SS20
+    -->
   `,
   host: {
     class: 'page-w800',

@@ -79,6 +79,7 @@ body {
 
 .button-row {
   display: flex;
+  flex-flow: row wrap;
   margin: 8px 0;
 }
 

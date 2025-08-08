@@ -17,11 +17,11 @@ export const ALL_PROJECTS: Array<ProjectDescription> = [
   physicalAutoencodersDescription,
   webSurfelsDescription,
   constrainedTDDescription,
+  roboyDescription,
 ];
 
 export const TODO_PROJECTS: Array<ProjectDescription> = [
   webSphDescription,
-  roboyDescription,
   abizeitungDescription,
   fsarCropex25Description,
   gediTdxDescription,
@@ -36,4 +36,5 @@ export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [
   physicalAutoencodersDescription,
   webSurfelsDescription,
   constrainedTDDescription,
+  roboyDescription,
 ];
