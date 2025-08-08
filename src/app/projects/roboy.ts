@@ -80,22 +80,22 @@ export const roboyDescription: ProjectDescription = {
     <div class="image-container">
       <img
         src="/assets/projects/roboy-lab-tour-karlsruhe-h400.jpg"
-        class="img-rounded img-h200"
+        class="img-rounded img-h250"
         alt="Lauron robot, HBP Neurorobotics, Karlsruhe"
       />
       <img
         src="/assets/projects/roboy-lab-tour-robioss-h400.jpg"
-        class="img-rounded img-h200"
+        class="img-rounded img-h250"
         alt="Robotic hand, RoBioSS, Poitiers"
       />
       <img
         src="/assets/projects/roboy-lab-tour-talence-h400.jpg"
-        class="img-rounded img-h200"
+        class="img-rounded img-h250"
         alt="Poppy robots, Flowers Lab, Talence"
       />
       <img
         src="/assets/projects/roboy-lab-tour-epfl-h400.jpg"
-        class="img-rounded img-h200"
+        class="img-rounded img-h250"
         alt="Pleurobot, EPFL BioRob, Lausanne"
       />
     </div>
@@ -106,7 +106,7 @@ export const roboyDescription: ProjectDescription = {
       became popular, we focused on rule-based approaches and state machines for dialog management.
     </p>
     <div class="image-container">
-      <img src="/assets/projects/roboy-dialog-states-h400.jpg" class="img-rounded img-h200" alt="State transitions" />
+      <img src="/assets/projects/roboy-dialog-states-h400.jpg" class="img-rounded img-h250" alt="State transitions" />
     </div>
 
     <p>
@@ -152,11 +152,11 @@ export const roboyDescription: ProjectDescription = {
     <div class="image-container">
       <img
         src="/assets/projects/roboy-junior-and-v2-h400.jpg"
-        class="img-rounded img-h200"
+        class="img-rounded img-h250"
         alt="Roboy Junior and Roboy v2.0"
       />
-      <img src="/assets/projects/roboy-v2-pelvis-h400.jpg" class="img-rounded img-h200" alt="3D printed pelvis" />
-      <img src="/assets/projects/roboy-v2-body-h400.jpg" class="img-rounded img-h200" alt="Assembled body" />
+      <img src="/assets/projects/roboy-v2-pelvis-h400.jpg" class="img-rounded img-h250" alt="3D printed pelvis" />
+      <img src="/assets/projects/roboy-v2-body-h400.jpg" class="img-rounded img-h250" alt="Assembled body" />
     </div>
 
     <div class="block-subtitle">Supervising Student Teams</div>
