@@ -4,7 +4,6 @@ import { constrainedTDDescription } from './projects/constrained-td';
 import { fsarCropex25Description } from './projects/fsar-cropex-25';
 import { gediTdxDescription } from './projects/gedi-tdx';
 import { insarSoilMoistureDescription } from './projects/insar-soil-moisture';
-import { modelBasedTDDescription } from './projects/model-based-td';
 import { netGyroBoyDescription } from './projects/net-gyro-boy';
 import { physicalAutoencodersDescription } from './projects/physical-autoencoders';
 import { roboyDescription } from './projects/roboy';
@@ -13,28 +12,24 @@ import { userlaneDescription } from './projects/userlane';
 import { webSphDescription } from './projects/web-sph';
 import { webSurfelsDescription } from './projects/web-surfels';
 
-export const ALL_PROJECTS: Array<ProjectDescription> = [
-  physicalAutoencodersDescription,
-  webSurfelsDescription,
-  constrainedTDDescription,
-  roboyDescription,
-];
-
-export const TODO_PROJECTS: Array<ProjectDescription> = [
-  webSphDescription,
-  abizeitungDescription,
-  fsarCropex25Description,
-  gediTdxDescription,
-  insarSoilMoistureDescription,
-  modelBasedTDDescription,
-  netGyroBoyDescription,
-  spectrumAnalyzerDescription,
-  userlaneDescription,
-];
-
 export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [
   physicalAutoencodersDescription,
   webSurfelsDescription,
   constrainedTDDescription,
   roboyDescription,
+];
+
+export const ALL_PROJECTS: Array<ProjectDescription> = [
+  physicalAutoencodersDescription,
+  webSurfelsDescription,
+  constrainedTDDescription,
+  roboyDescription,
+  fsarCropex25Description,
+  gediTdxDescription,
+  webSphDescription,
+  abizeitungDescription,
+  //insarSoilMoistureDescription,
+  //netGyroBoyDescription,
+  //spectrumAnalyzerDescription,
+  //userlaneDescription,
 ];

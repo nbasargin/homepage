@@ -9,7 +9,8 @@ export const webSphDescription: ProjectDescription = {
   title: 'WebSPH',
   description: "Bachelor's thesis, Interactive Simulation of Floods Using the SPH Method",
   imageUrl: '/assets/projects/web-sph-preview.jpg',
-  detailsLink: '/web-sph',
+  // detailsLink: '/web-sph',
+  externalLink: 'https://websph.azurewebsites.net/',
 };
 
 @Component({
@@ -32,9 +33,6 @@ export const webSphDescription: ProjectDescription = {
     </div>
     <p>Details</p>
   `,
-  host: {
-    class: 'page-w800',
-  },
   styles: '',
 })
 export class WebSphComponent {}

@@ -3,4 +3,5 @@ export interface ProjectDescription {
   description: string;
   imageUrl: string;
   detailsLink?: string;
+  externalLink?: string;
 }

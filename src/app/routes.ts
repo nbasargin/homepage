@@ -1,12 +1,11 @@
 import { Routes } from '@angular/router';
 import { PageHomeComponent } from './page-home/page-home';
-import { PageProjectsComponent } from './page-projects/projects-page';
+import { PageProjectsComponent } from './page-projects/page-projects';
 import { AbizeitungComponent } from './projects/abizeitung';
 import { ConstrainedTDComponent } from './projects/constrained-td';
 import { FsarCropex25Component } from './projects/fsar-cropex-25';
 import { GediTdxComponent } from './projects/gedi-tdx';
 import { InsarSoilMoistureComponent } from './projects/insar-soil-moisture';
-import { ModelBasedTDComponent } from './projects/model-based-td';
 import { NetGyroBoyComponent } from './projects/net-gyro-boy';
 import { PhysicalAutoencodersComponent } from './projects/physical-autoencoders';
 import { RoboyComponent } from './projects/roboy';
@@ -45,10 +44,6 @@ export const routes: Routes = [
   {
     path: 'insar-soil-moisture',
     component: InsarSoilMoistureComponent,
-  },
-  {
-    path: 'model-based-td',
-    component: ModelBasedTDComponent,
   },
   {
     path: 'net-gyro-boy',

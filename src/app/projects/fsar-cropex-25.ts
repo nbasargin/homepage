@@ -9,7 +9,9 @@ export const fsarCropex25Description: ProjectDescription = {
   title: 'CROPEX 2025',
   description: 'Experimental F-SAR airborne campaign',
   imageUrl: '/assets/projects/fsar-cropex-25-preview.jpg',
-  detailsLink: '/fsar-cropex-25',
+  // detailsLink: '/fsar-cropex-25',
+  externalLink:
+    'https://www.dlr.de/en/latest/news/2025/test-flights-over-bavaria-inform-upcoming-earth-observation-space-missions',
 };
 
 @Component({

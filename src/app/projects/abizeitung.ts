@@ -9,7 +9,8 @@ export const abizeitungDescription: ProjectDescription = {
   title: 'Abizeitung',
   description: 'School yearbook design',
   imageUrl: '/assets/projects/abizeitung-preview.jpg',
-  detailsLink: '/abizeitung',
+  // detailsLink: '/abizeitung',
+  externalLink: 'https://drive.google.com/file/d/1RtLbxlYI1aWjkSz_ToQINEt4wG6DddB8/view',
 };
 
 @Component({
@@ -32,9 +33,6 @@ export const abizeitungDescription: ProjectDescription = {
     </div>
     <p>Details</p>
   `,
-  host: {
-    class: 'page-w800',
-  },
   styles: '',
 })
 export class AbizeitungComponent {}

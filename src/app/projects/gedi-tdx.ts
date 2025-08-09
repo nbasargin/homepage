@@ -9,7 +9,8 @@ export const gediTdxDescription: ProjectDescription = {
   title: 'GEDI-TDX',
   description: 'GEDI-TDX data fusion for forest structure analysis',
   imageUrl: '/assets/projects/gedi-tdx-preview.jpg',
-  detailsLink: '/gedi-tdx',
+  //detailsLink: '/gedi-tdx',
+  externalLink: 'https://gedi.umd.edu/applications/gedi-tandem-x/',
 };
 
 @Component({
@@ -32,9 +33,6 @@ export const gediTdxDescription: ProjectDescription = {
     </div>
     <p>Details</p>
   `,
-  host: {
-    class: 'page-w800',
-  },
   styles: '',
 })
 export class GediTdxComponent {}
