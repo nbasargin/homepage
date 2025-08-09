@@ -5,11 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 
-export const constrainedTDDescription: ProjectDescription = {
-  title: 'Constrained TD',
+export const tensorDecompDescription: ProjectDescription = {
+  title: 'Tensor Decompositions',
   description: 'Constrained tensor decompositions (TD) for SAR time series analysis',
   imageUrl: '/assets/projects/constrained-td-preview.png',
-  detailsLink: '/constrained-td',
+  detailsLink: '/tensor-decompositions',
 };
 
 @Component({

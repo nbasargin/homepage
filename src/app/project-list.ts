@@ -1,6 +1,6 @@
 import { ProjectDescription } from './projects/project-description';
 import { abizeitungDescription } from './projects/abizeitung';
-import { constrainedTDDescription } from './projects/constrained-td';
+import { tensorDecompDescription } from './projects/tensor-decomp';
 import { fsarCropex25Description } from './projects/fsar-cropex-25';
 import { gediTdxDescription } from './projects/gedi-tdx';
 import { insarSoilMoistureDescription } from './projects/insar-soil-moisture';
@@ -15,14 +15,14 @@ import { webSurfelsDescription } from './projects/web-surfels';
 export const HIGHLIGHT_PROJECTS: Array<ProjectDescription> = [
   physicalAutoencodersDescription,
   webSurfelsDescription,
-  constrainedTDDescription,
+  tensorDecompDescription,
   roboyDescription,
 ];
 
 export const ALL_PROJECTS: Array<ProjectDescription> = [
   physicalAutoencodersDescription,
   webSurfelsDescription,
-  constrainedTDDescription,
+  tensorDecompDescription,
   roboyDescription,
   fsarCropex25Description,
   gediTdxDescription,
