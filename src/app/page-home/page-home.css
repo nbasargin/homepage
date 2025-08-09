@@ -3,21 +3,13 @@
   --column-size: 200px;
 }
 
-.section-vertical-padding {
-  padding: var(--global-page-spacing) 0;
-}
-
-.block-margin-bottom {
-  margin-bottom: var(--global-page-spacing);
-}
-
 /* Profile */
 
 .profile-block {
   display: grid;
   grid-template-columns: 1fr var(--avatar-size);
-  gap: var(--global-image-spacing);
-  justify-content: start;
+  gap: var(--glob-spacing-m);
+  justify-content: center;
 }
 
 .personal-info {
@@ -52,22 +44,44 @@
   background: #004d61;
 }
 
-.section-centered-title {
-  text-align: center;
-  margin-bottom: var(--global-page-spacing);
+/* CV */
+
+.awards-section {
+  background: #3e5641;
 }
 
-/* CV */
+.education-section {
+  background: #822659;
+}
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--global-image-spacing);
+  gap: var(--glob-spacing-m);
   justify-content: start;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.authors {
+  font-style: italic;
 }
 
 .location-date {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   gap: 4px;
+
+  mat-icon {
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+  }
+
+  span:not(:last-child) {
+    margin-right: 8px;
+  }
 }

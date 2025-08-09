@@ -1,4 +1,4 @@
 :host {
   display: block;
-  height: var(--global-page-spacing);
+  height: var(--glob-spacing-l);
 }

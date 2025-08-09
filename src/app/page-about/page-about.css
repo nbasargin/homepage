@@ -5,9 +5,9 @@
 .about-grid {
   display: grid;
   grid-template-columns: var(--column-size) 1fr;
-  gap: var(--global-image-spacing);
+  gap: var(--glob-spacing-m);
   justify-content: start;
-  margin-bottom: var(--global-page-spacing);
+  margin-bottom: var(--glob-spacing-l);
 }
 
 @media (max-width: 600px) {

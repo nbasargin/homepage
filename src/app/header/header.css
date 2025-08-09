@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   max-width: 100%;
-  height: var(--global-header-height);
+  height: var(--glob-header-height);
   backdrop-filter: blur(10px);
   background: color-mix(in srgb, var(--mat-sys-surface) 70%, transparent);
   z-index: 10;
@@ -20,7 +20,7 @@
 .navbar-item {
   padding: 0 16px;
   font-size: 18px;
-  line-height: var(--global-header-height);
+  line-height: var(--glob-header-height);
   height: 100%;
 
   &.active {

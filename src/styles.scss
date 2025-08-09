@@ -1,11 +1,12 @@
 @use '@angular/material' as mat;
 
 :root {
-  --global-header-height: 64px;
-  --global-max-width: 1200px;
-  --global-max-article-width: 800px;
-  --global-page-spacing: 24px;
-  --global-image-spacing: 16px;
+  --glob-header-height: 64px;
+  --glob-page-width: 1200px;
+  --glob-article-width: 800px;
+  --glob-spacing-s: 8px;
+  --glob-spacing-m: 16px;
+  --glob-spacing-l: 24px;
   --card-min-width: 250px;
   --card-max-width: 350px;
 }
@@ -41,12 +42,12 @@ body {
   min-height: 100%;
 }
 
-/* utility styles */
+/* layout */
 
 .grid-800 {
   display: grid;
-  grid-template-columns: 1fr min(var(--global-max-article-width), calc(100% - var(--global-page-spacing) * 2)) 1fr;
-  grid-column-gap: var(--global-page-spacing);
+  grid-template-columns: 1fr min(var(--glob-article-width), calc(100% - var(--glob-spacing-l) * 2)) 1fr;
+  grid-column-gap: var(--glob-spacing-l);
 
   .center-col {
     grid-column: 2;
@@ -55,25 +56,50 @@ body {
 
 .grid-1200 {
   display: grid;
-  grid-template-columns: 1fr min(var(--global-max-width), calc(100% - var(--global-page-spacing) * 2)) 1fr;
-  grid-column-gap: var(--global-page-spacing);
+  grid-template-columns: 1fr min(var(--glob-page-width), calc(100% - var(--glob-spacing-l) * 2)) 1fr;
+  grid-column-gap: var(--glob-spacing-l);
 
   .center-col {
     grid-column: 2;
   }
 }
 
+/* utility styles */
+
+.centered {
+  text-align: center;
+}
+
+.mb-s {
+  margin-bottom: var(--glob-spacing-s);
+}
+.mb-m {
+  margin-bottom: var(--glob-spacing-m);
+}
+.mb-l {
+  margin-bottom: var(--glob-spacing-l);
+}
+
+.pb-l {
+  padding-bottom: var(--glob-spacing-l);
+}
+.pt-l {
+  padding-top: var(--glob-spacing-l);
+}
+
+/* deprecated */
 .page-w800 {
   display: block;
   max-width: 800px;
-  padding: 0 var(--global-page-spacing);
+  padding: 0 var(--glob-spacing-l);
   margin: 0 auto;
 }
 
+/* deprecated */
 .page-w1200 {
   display: block;
-  max-width: var(--global-max-width);
-  padding: 0 var(--global-page-spacing);
+  max-width: var(--glob-page-width);
+  padding: 0 var(--glob-spacing-l);
   margin: 0 auto;
 }
 
@@ -99,7 +125,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: var(--global-image-spacing);
+  gap: var(--glob-spacing-m);
   margin: 8px 0 16px;
 }
 
@@ -133,10 +159,13 @@ body {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), max-content));
-  gap: var(--global-page-spacing);
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), max-content));*/
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--glob-spacing-l);
   justify-content: center;
+  align-content: stretch;
 }
 
 .warning-note {

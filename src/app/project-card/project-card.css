@@ -1,8 +1,8 @@
 :host {
   display: block;
-  width: 100%;
   min-width: var(--card-min-width);
   max-width: var(--card-max-width);
+  flex: 1 1 var(--card-min-width);
 }
 
 .project-image {
