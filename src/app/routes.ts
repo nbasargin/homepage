@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { PageHomeComponent } from './page-home/page-home';
 import { PageProjectsComponent } from './page-projects/projects-page';
-import { PageAboutComponent } from './page-about/page-about';
 import { AbizeitungComponent } from './projects/abizeitung';
 import { ConstrainedTDComponent } from './projects/constrained-td';
 import { FsarCropex25Component } from './projects/fsar-cropex-25';
@@ -25,10 +24,6 @@ export const routes: Routes = [
   {
     path: 'projects',
     component: PageProjectsComponent,
-  },
-  {
-    path: 'about',
-    component: PageAboutComponent,
   },
   // project details
   {

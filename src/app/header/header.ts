@@ -14,9 +14,6 @@ import { MatTabsModule } from '@angular/material/tabs';
         <div class="navbar-item" routerLinkActive="active">
           <span class="navbar-link" routerLink="/projects">Projects</span>
         </div>
-        <div class="navbar-item" routerLinkActive="active">
-          <span class="navbar-link" routerLink="/about">About</span>
-        </div>
       </div>
     </nav>
   `,
