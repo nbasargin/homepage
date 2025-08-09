@@ -3,6 +3,7 @@
 :root {
   --global-header-height: 64px;
   --global-max-width: 1200px;
+  --global-max-article-width: 800px;
   --global-page-spacing: 24px;
   --global-image-spacing: 16px;
   --card-min-width: 250px;
@@ -14,7 +15,7 @@
 }
 
 html {
-  color-scheme: light dark;
+  color-scheme: dark; /* light dark */
   scrollbar-width: thin;
   width: 100%;
   min-height: 100%;
@@ -42,11 +43,24 @@ body {
 
 /* utility styles */
 
-.navbar-w1200 {
-  display: block;
-  max-width: var(--global-max-width);
-  padding: 0 var(--global-page-spacing);
-  margin: 0 auto;
+.grid-800 {
+  display: grid;
+  grid-template-columns: 1fr min(var(--global-max-article-width), calc(100% - var(--global-page-spacing) * 2)) 1fr;
+  grid-column-gap: var(--global-page-spacing);
+
+  .center-col {
+    grid-column: 2;
+  }
+}
+
+.grid-1200 {
+  display: grid;
+  grid-template-columns: 1fr min(var(--global-max-width), calc(100% - var(--global-page-spacing) * 2)) 1fr;
+  grid-column-gap: var(--global-page-spacing);
+
+  .center-col {
+    grid-column: 2;
+  }
 }
 
 .page-w800 {
@@ -67,14 +81,12 @@ body {
   display: block;
   font-size: 24px;
   font-weight: bold;
-  margin: 24px 0;
 }
 
 .block-subtitle {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  margin: 32px 0 16px;
 }
 
 .button-row {

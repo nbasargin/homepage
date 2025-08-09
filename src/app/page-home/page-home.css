@@ -1,0 +1,73 @@
+:host {
+  --avatar-size: 200px;
+  --column-size: 200px;
+}
+
+.section-vertical-padding {
+  padding: var(--global-page-spacing) 0;
+}
+
+.block-margin-bottom {
+  margin-bottom: var(--global-page-spacing);
+}
+
+/* Profile */
+
+.profile-block {
+  display: grid;
+  grid-template-columns: 1fr var(--avatar-size);
+  gap: var(--global-image-spacing);
+  justify-content: start;
+}
+
+.personal-info {
+  align-self: center;
+  .block-title {
+    margin: 0;
+  }
+}
+
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .profile-block {
+    grid-template-columns: 1fr;
+  }
+  .avatar {
+    grid-row: 1;
+    width: calc(var(--avatar-size) * 0.8);
+    height: calc(var(--avatar-size) * 0.8);
+  }
+}
+
+/* Projects */
+
+.projects-section {
+  background: #004d61;
+}
+
+.section-centered-title {
+  text-align: center;
+  margin-bottom: var(--global-page-spacing);
+}
+
+/* CV */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--global-image-spacing);
+  justify-content: start;
+}
+
+.location-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
