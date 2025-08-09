@@ -4,6 +4,7 @@
   --glob-header-height: 64px;
   --glob-page-width: 1200px;
   --glob-article-width: 800px;
+  --glob-spacing-xs: 4px;
   --glob-spacing-s: 8px;
   --glob-spacing-m: 16px;
   --glob-spacing-l: 24px;
@@ -87,22 +88,6 @@ body {
   padding-top: var(--glob-spacing-l);
 }
 
-/* deprecated */
-.page-w800 {
-  display: block;
-  max-width: 800px;
-  padding: 0 var(--glob-spacing-l);
-  margin: 0 auto;
-}
-
-/* deprecated */
-.page-w1200 {
-  display: block;
-  max-width: var(--glob-page-width);
-  padding: 0 var(--glob-spacing-l);
-  margin: 0 auto;
-}
-
 .block-title {
   display: block;
   font-size: 24px;
@@ -118,7 +103,7 @@ body {
 .button-row {
   display: flex;
   flex-flow: row wrap;
-  margin: 8px 0;
+  gap: var(--glob-spacing-s);
 }
 
 .image-container {
@@ -126,7 +111,6 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   gap: var(--glob-spacing-m);
-  margin: 8px 0 16px;
 }
 
 .img-rounded {

@@ -32,9 +32,6 @@ export const userlaneDescription: ProjectDescription = {
     </div>
     <p>Details</p>
   `,
-  host: {
-    class: 'page-w800',
-  },
   styles: '',
 })
 export class UserlaneComponent {}

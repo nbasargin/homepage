@@ -1,0 +1,39 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  :host {
+    grid-template-columns: 1fr min-content;
+  }
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.location-date {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 var(--glob-spacing-m);
+
+  mat-icon {
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: var(--glob-spacing-xs);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: var(--glob-spacing-xs);
+}

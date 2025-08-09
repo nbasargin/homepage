@@ -25,7 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
               <button mat-button [routerLink]="projectData.detailsLink"><mat-icon>read_more</mat-icon>Details</button>
             }
             @if (projectData.externalLink) {
-              <a mat-button="elevated" [href]="projectData.externalLink" target="_blank">
+              <a mat-button [href]="projectData.externalLink" target="_blank">
                 <mat-icon>open_in_new</mat-icon>
                 Link
               </a>

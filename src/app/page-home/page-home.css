@@ -60,28 +60,3 @@
   gap: var(--glob-spacing-m);
   justify-content: start;
 }
-
-.item-title {
-  font-weight: bold;
-}
-
-.authors {
-  font-style: italic;
-}
-
-.location-date {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  gap: 4px;
-
-  mat-icon {
-    font-size: 18px;
-    height: 18px;
-    width: 18px;
-  }
-
-  span:not(:last-child) {
-    margin-right: 8px;
-  }
-}

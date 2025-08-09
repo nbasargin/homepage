@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { ProjectCardComponent } from '../project-card/project-card';
-import { HIGHLIGHT_PROJECTS } from '../project-list';
 import { MatIconModule } from '@angular/material/icon';
+import { ProjectCardComponent } from '../project-card/project-card';
+import { ListEntryComponent } from '../list-entry/list-entry';
+import { HIGHLIGHT_PROJECTS } from '../project-list';
 
 @Component({
   selector: 'hp-page-home',
-  imports: [ProjectCardComponent, MatIconModule],
+  imports: [MatIconModule, ProjectCardComponent, ListEntryComponent],
   template: `
     <div class="grid-800 pt-l pb-l">
       <div class="center-col">
@@ -26,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
 
     <div class="projects-section grid-1200 pt-l pb-l">
       <div class="center-col">
-        <div class="block-title centered mb-l">Selected Projects</div>
+        <div class="block-title centered mb-l">Project Highlights</div>
         <div class="project-list">
           @for (project of HIGHLIGHT_PROJECTS; track $index) {
             <hp-project-card [projectData]="project"></hp-project-card>
@@ -39,28 +40,25 @@ import { MatIconModule } from '@angular/material/icon';
       <div class="center-col">
         <div class="block-title mb-m">Publications</div>
         <div class="about-grid">
-          <div>
-            <div class="item-title">Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation</div>
-            <div class="authors">Nikita Basargin, Alberto Alonso-González, Irena Hajnsek</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>CVPR Workshops</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2025</span>
-            </div>
-          </div>
-          <div>
-            <div class="item-title">
-              Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis
-            </div>
-            <div class="authors">Nikita Basargin, Alberto Alonso-González, Irena Hajnsek</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>IEEE TGRS</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2023</span>
-            </div>
-          </div>
+          <hp-list-entry
+            [title]="'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation'"
+            [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+            [place]="'CVPR Workshops'"
+            [time]="'2025'"
+            [paperLink]="
+              'https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Basargin_Explainable_Physical_PolSAR_Autoencoders_for_Soil_Moisture_Estimation_CVPRW_2025_paper.pdf'
+            "
+            [githubLink]="'https://github.com/nbasargin/nb2025earthvision'"
+          >
+          </hp-list-entry>
+          <hp-list-entry
+            [title]="'Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis'"
+            [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+            [place]="'IEEE TGRS'"
+            [time]="'2023'"
+            [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
+          >
+          </hp-list-entry>
         </div>
       </div>
     </div>
@@ -69,40 +67,12 @@ import { MatIconModule } from '@angular/material/icon';
       <div class="center-col">
         <div class="block-title mb-m">Awards and Scholarships</div>
         <div class="about-grid">
-          <div>
-            <div class="item-title">Best Poster Award</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>IEEE GRSS IADF School</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2023</span>
-            </div>
-          </div>
-          <div>
-            <div class="item-title">Rohde & Schwarz Best-Bachelor-Award</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>TUM</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2017</span>
-            </div>
-          </div>
-          <div>
-            <div class="item-title">best.in.tum</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>TUM</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2016 - 2020</span>
-            </div>
-          </div>
-          <div>
-            <div class="item-title">Max Weber Program (MWP) Scholarship</div>
-            <div class="location-date">
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2014 - 2020</span>
-            </div>
-          </div>
+          <hp-list-entry [title]="'Best Poster Award'" [place]="'IEEE GRSS IADF School'" [time]="'2023'">
+          </hp-list-entry>
+          <hp-list-entry [title]="'Rohde & Schwarz Best-Bachelor-Award'" [place]="'TUM'" [time]="'2017'">
+          </hp-list-entry>
+          <hp-list-entry [title]="'best.in.tum'" [place]="'TUM'" [time]="'2016 - 2020'"> </hp-list-entry>
+          <hp-list-entry [title]="'Max Weber Program (MWP) Scholarship'" [time]="'2014 - 2020'"> </hp-list-entry>
         </div>
       </div>
     </div>
@@ -111,16 +81,13 @@ import { MatIconModule } from '@angular/material/icon';
       <div class="center-col">
         <div class="block-title mb-m">Research & Development Experience</div>
         <div class="about-grid">
-          <div>
-            <div class="item-title">Software Engineer</div>
-            <div>Web development (Angular & React), Data analytics</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>Userlane, Munich</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2019 - 2021</span>
-            </div>
-          </div>
+          <hp-list-entry
+            [title]="'Software Engineer'"
+            [descriptionLines]="['Web development (Angular & React), Data analytics']"
+            [place]="'Userlane, Munich'"
+            [time]="'2019 - 2021'"
+          >
+          </hp-list-entry>
         </div>
       </div>
     </div>
@@ -129,52 +96,39 @@ import { MatIconModule } from '@angular/material/icon';
       <div class="center-col">
         <div class="block-title mb-m">Education</div>
         <div class="about-grid">
-          <div>
-            <div class="item-title">PhD in Data Science and Remote Sensing</div>
-            <div>Topic: Bio- and Geophysical Parameter Estimation from Multidimensional SAR Data</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>DLR, TUM, MUDS, Munich</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2021 - now</span>
-            </div>
-          </div>
+          <hp-list-entry
+            [title]="'PhD in Data Science and Remote Sensing'"
+            [descriptionLines]="['Topic: Bio- and Geophysical Parameter Estimation from Multidimensional SAR Data']"
+            [place]="'DLR, TUM, MUDS, Munich'"
+            [time]="'2021 - now'"
+          >
+          </hp-list-entry>
 
-          <div>
-            <div class="item-title">Master of Informatics</div>
-            <div>Passed with high distinction, grade: 1.0</div>
-            <div>Thesis: High-Quality Point Cloud Rendering in WebGL</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>TUM, Munich</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2017 - 2020</span>
-            </div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>UOW, Australia</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2018</span>
-            </div>
-          </div>
+          <hp-list-entry
+            [title]="'Master of Informatics'"
+            [descriptionLines]="[
+              'Passed with high distinction, grade: 1.0',
+              'Thesis: High-Quality Point Cloud Rendering in WebGL',
+            ]"
+            [place]="'TUM, Munich'"
+            [time]="'2017 - 2020'"
+            [place2]="'UOW, Australia'"
+            [time2]="'2018'"
+          >
+          </hp-list-entry>
 
-          <div>
-            <div class="item-title">Bachelor of Informatics</div>
-            <div>Passed with high distinction, grade: 1.1</div>
-            <div>Thesis: Interactive simulation of floods using the SPH method</div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>TUM, Munich</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2014 - 2017</span>
-            </div>
-            <div class="location-date">
-              <mat-icon fontIcon="location_on"></mat-icon>
-              <span>NUS, Singapore</span>
-              <mat-icon fontIcon="date_range"></mat-icon>
-              <span>2016</span>
-            </div>
-          </div>
+          <hp-list-entry
+            [title]="'Bachelor of Informatics'"
+            [descriptionLines]="[
+              'Passed with high distinction, grade: 1.1',
+              'Thesis: Interactive simulation of floods using the SPH method',
+            ]"
+            [place]="'TUM, Munich'"
+            [time]="'2014 - 2017'"
+            [place2]="'NUS, Singapore'"
+            [time2]="'2016'"
+          >
+          </hp-list-entry>
         </div>
       </div>
     </div>
