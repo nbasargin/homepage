@@ -6,11 +6,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 import { ListEntryComponent } from '../list-entry/list-entry';
 import { GalleryComponent, GalleryImage } from '../gallery/gallery';
+import { baseUrl } from '../../environments/environment';
 
 export const sarTensorsDescription: ProjectDescription = {
   title: 'SAR Tensors',
   description: 'Tensor decompositions for SAR data',
-  imageUrl: '/assets/projects/sar-tensors/sar-tensors-constrained-td-preview.700x400.png',
+  imageUrl: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td-preview.700x400.png',
   detailsLink: '/sar-tensors',
 };
 
@@ -84,10 +85,10 @@ export const sarTensorsDescription: ProjectDescription = {
 export class SarTensorsComponent {
   cpImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
+      imgSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
       imgWidth: 1500,
       imgHeight: 500,
-      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
+      thumbSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
       thumbAlt:
         'CP decomposition decomposes a tensor into a sum of components, each reconstructed from factor vectors.',
       thumbClass: 'img-rounded img-h200',
@@ -97,10 +98,10 @@ export class SarTensorsComponent {
 
   constrainedImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
+      imgSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
       imgWidth: 1500,
       imgHeight: 500,
-      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
+      thumbSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
       thumbAlt:
         'Constrained decomposition extends the CP decomposition and allows to set different constraints on the factors.',
       thumbClass: 'img-rounded img-h200',
@@ -110,10 +111,10 @@ export class SarTensorsComponent {
 
   forwardPassImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
+      imgSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
       imgWidth: 1500,
       imgHeight: 800,
-      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
+      thumbSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
       thumbAlt: 'Forward pass reconstructs the tensor and computes the distance to the input data.',
       thumbClass: 'img-rounded img-h300',
       thumbCropped: false,

@@ -6,11 +6,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 import { ListEntryComponent } from '../list-entry/list-entry';
 import { GalleryComponent, GalleryImage } from '../gallery/gallery';
+import { baseUrl } from '../../environments/environment';
 
 export const physicalAutoencodersDescription: ProjectDescription = {
   title: 'Physical Autoencoders',
   description: 'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation',
-  imageUrl: '/assets/projects/physical-autoencoders/physical-autoencoders-preview.700x400.png',
+  imageUrl: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-preview.700x400.png',
   detailsLink: '/physical-autoencoders',
 };
 
@@ -88,10 +89,10 @@ export const physicalAutoencodersDescription: ProjectDescription = {
 export class PhysicalAutoencodersComponent {
   physicalImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-physics.1000x500.png',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-physics.1000x500.png',
       imgWidth: 1000,
       imgHeight: 500,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-physics.1000x500.png',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-physics.1000x500.png',
       thumbAlt: 'Physical forward models map physical parameters to the expected SAR signal.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -100,10 +101,10 @@ export class PhysicalAutoencodersComponent {
 
   mlImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-ml.1000x500.png',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-ml.1000x500.png',
       imgWidth: 1000,
       imgHeight: 500,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-ml.1000x500.png',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-ml.1000x500.png',
       thumbAlt: 'ML models are commonly used to predict geophysical parameters from SAR data.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -112,10 +113,10 @@ export class PhysicalAutoencodersComponent {
 
   combinedImage: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-combined.1500x500.png',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-combined.1500x500.png',
       imgWidth: 1500,
       imgHeight: 500,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-combined.1500x500.png',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-combined.1500x500.png',
       thumbAlt: 'Physical autoencoder combines an ML encoder with a physical model acting as a decoder.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -124,37 +125,37 @@ export class PhysicalAutoencodersComponent {
 
   cvprImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-01.4080x3072.jpg',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-01.4080x3072.jpg',
       imgWidth: 4080,
       imgHeight: 3072,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-01.664x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-01.664x500.jpg',
       thumbAlt: 'NVIDIA researcher celebration social event at Ole Smoky.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-02.3402x2562.jpg',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-02.3402x2562.jpg',
       imgWidth: 3402,
       imgHeight: 2562,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-02.664x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-02.664x500.jpg',
       thumbAlt: 'Several tech demos were presented in parallel to the main conference.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-03.4080x3072.jpg',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-03.4080x3072.jpg',
       imgWidth: 4080,
       imgHeight: 3072,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-03.664x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-03.664x500.jpg',
       thumbAlt: 'Keynotes and oral presentations in the Karl F. Dean Grand Ballroom.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-04.2651x1996.jpg',
+      imgSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-04.2651x1996.jpg',
       imgWidth: 2651,
       imgHeight: 1996,
-      thumbSrc: '/assets/projects/physical-autoencoders/physical-autoencoders-cvpr-04.664x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/physical-autoencoders/physical-autoencoders-cvpr-04.664x500.jpg',
       thumbAlt: 'Poster session with about 500 posters in parallel.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,

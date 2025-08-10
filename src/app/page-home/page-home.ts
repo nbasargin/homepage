@@ -3,6 +3,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectCardComponent } from '../project-card/project-card';
 import { ListEntryComponent } from '../list-entry/list-entry';
 import { HIGHLIGHT_PROJECTS } from '../project-list';
+import { baseUrl } from '../../environments/environment';
 
 @Component({
   selector: 'hp-page-home',
@@ -20,7 +21,7 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
               current work focuses on Python and PyTorch, I have a strong background in web development and TypeScript.
             </p>
           </div>
-          <img src="/assets/about/profile-gh.jpg" alt="Profile Picture" class="avatar" />
+          <img [src]="avatarUrl" alt="Profile Picture" class="avatar" />
         </div>
       </div>
     </div>
@@ -134,4 +135,5 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
 })
 export class PageHomeComponent {
   HIGHLIGHT_PROJECTS = HIGHLIGHT_PROJECTS;
+  avatarUrl = baseUrl + 'assets/about/profile-gh.jpg';
 }

@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const netGyroBoyDescription: ProjectDescription = {
   title: 'NetGyroBoy',
   description: 'Development of a Demonstrator for a Wireless Cyber-Physical Network',
-  imageUrl: '/assets/projects/net-gyro-boy-preview.jpg',
+  imageUrl: baseUrl + 'assets/projects/net-gyro-boy-preview.jpg',
   detailsLink: '/net-gyro-boy',
 };
 
@@ -27,9 +28,6 @@ export const netGyroBoyDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

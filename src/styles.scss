@@ -116,13 +116,6 @@ body {
   gap: var(--glob-spacing-s);
 }
 
-.image-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: var(--glob-spacing-m);
-}
-
 .img-rounded {
   border-radius: var(--mat-sys-corner-medium);
 }

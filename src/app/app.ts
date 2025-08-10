@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header';
 import { FooterComponent } from './footer/footer';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -16,7 +16,24 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './app.css',
 })
 export class AppComponent {
-  constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
+  constructor(
+    matIconRegistry: MatIconRegistry,
+    domSanitizer: DomSanitizer,
+    private router: Router,
+  ) {
     matIconRegistry.addSvgIcon('github', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/github.svg'));
+  }
+
+  ngOnInit(): void {
+    // check for scheduled redirects (specific to GitHub pages)
+    let comingFrom = localStorage.getItem('coming-from');
+    if (comingFrom) {
+      localStorage.removeItem('coming-from');
+      comingFrom = comingFrom.replace('homepage/', './');
+      console.log(`Found redirect request to ${comingFrom}. Redirecting...`);
+      this.router.navigate([comingFrom]).catch((error) => {
+        console.warn(`Redirect to ${comingFrom} failed!`, error);
+      });
+    }
   }
 }

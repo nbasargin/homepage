@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const webSphDescription: ProjectDescription = {
   title: 'WebSPH',
   description: "Bachelor's thesis, Interactive Simulation of Floods Using the SPH Method",
-  imageUrl: '/assets/projects/web-sph/web-sph-preview.700x400.jpg',
+  imageUrl: baseUrl + 'assets/projects/web-sph/web-sph-preview.700x400.jpg',
   // detailsLink: '/web-sph',
   externalLink: 'https://websph.azurewebsites.net/',
 };
@@ -28,9 +29,6 @@ export const webSphDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

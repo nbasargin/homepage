@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const abizeitungDescription: ProjectDescription = {
   title: 'Abizeitung',
   description: 'School yearbook design',
-  imageUrl: '/assets/projects/abizeitung/abizeitung-preview.700x400.jpg',
+  imageUrl: baseUrl + 'assets/projects/abizeitung/abizeitung-preview.700x400.jpg',
   // detailsLink: '/abizeitung',
   externalLink: 'https://drive.google.com/file/d/1RtLbxlYI1aWjkSz_ToQINEt4wG6DddB8/view',
 };
@@ -28,9 +29,6 @@ export const abizeitungDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

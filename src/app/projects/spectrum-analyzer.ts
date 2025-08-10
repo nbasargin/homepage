@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const spectrumAnalyzerDescription: ProjectDescription = {
   title: 'Spectrum Analyzer',
   description: 'TUM Project: implementation of a spectrum analyzer on an FPGA',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: baseUrl + 'assets/placeholder.png',
   detailsLink: '/spectrum-analyzer',
 };
 
@@ -27,9 +28,6 @@ export const spectrumAnalyzerDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

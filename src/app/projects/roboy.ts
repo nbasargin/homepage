@@ -5,11 +5,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 import { GalleryComponent, GalleryImage } from '../gallery/gallery';
+import { baseUrl } from '../../environments/environment';
 
 export const roboyDescription: ProjectDescription = {
   title: 'Roboy',
   description: 'Roboy student team, middleware and cognition projects',
-  imageUrl: '/assets/projects/roboy/roboy-preview.700x400.png',
+  imageUrl: baseUrl + 'assets/projects/roboy/roboy-preview.700x400.png',
   detailsLink: '/roboy',
 };
 
@@ -157,19 +158,19 @@ export const roboyDescription: ProjectDescription = {
 export class RoboyComponent {
   lighthouseImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/roboy/roboy-lighthouse-tracking.1078x622.png',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-lighthouse-tracking.1078x622.png',
       imgWidth: 1078,
       imgHeight: 622,
-      thumbSrc: '/assets/projects/roboy/roboy-lighthouse-tracking.693x400.png',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-lighthouse-tracking.693x400.png',
       thumbAlt: 'Lighthouses regularly sweep the room with lasers, allowing to triangulate sensor positions.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-de0-nano.2730x1851.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-de0-nano.2730x1851.jpg',
       imgWidth: 2730,
       imgHeight: 1851,
-      thumbSrc: '/assets/projects/roboy/roboy-de0-nano.590x400.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-de0-nano.590x400.jpg',
       thumbAlt: 'DE0-nano board used for signal processing.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -178,37 +179,37 @@ export class RoboyComponent {
 
   labTourImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/roboy/roboy-lab-tour-karlsruhe.4160x3120.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-karlsruhe.4160x3120.jpg',
       imgWidth: 4160,
       imgHeight: 3120,
-      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-karlsruhe.667x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-karlsruhe.667x500.jpg',
       thumbAlt: 'Lauron robot, HBP Neurorobotics, Karlsruhe.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-lab-tour-robioss.4160x3120.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-robioss.4160x3120.jpg',
       imgWidth: 4160,
       imgHeight: 3120,
-      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-robioss.667x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-robioss.667x500.jpg',
       thumbAlt: 'Robotic hand, RoBioSS, Poitiers.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-lab-tour-talence.3120x2340.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-talence.3120x2340.jpg',
       imgWidth: 3120,
       imgHeight: 2340,
-      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-talence.667x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-talence.667x500.jpg',
       thumbAlt: 'Poppy robots, Flowers Lab, Talence.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-lab-tour-epfl.3655x2741.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-epfl.3655x2741.jpg',
       imgWidth: 3655,
       imgHeight: 2741,
-      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-epfl.667x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-lab-tour-epfl.667x500.jpg',
       thumbAlt: 'Pleurobot, EPFL Biorob, Lausanne.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
@@ -217,10 +218,10 @@ export class RoboyComponent {
 
   dialogImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/roboy/roboy-dialog-states.2505x1408.png',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-dialog-states.2505x1408.png',
       imgWidth: 2505,
       imgHeight: 1408,
-      thumbSrc: '/assets/projects/roboy/roboy-dialog-states.890x500.png',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-dialog-states.890x500.png',
       thumbAlt: 'Dialog system state transitions.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
@@ -229,28 +230,28 @@ export class RoboyComponent {
 
   roboyV2Images: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/roboy/roboy-junior-and-v2.1280x853.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-junior-and-v2.1280x853.jpg',
       imgWidth: 1280,
       imgHeight: 853,
-      thumbSrc: '/assets/projects/roboy/roboy-junior-and-v2.750x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-junior-and-v2.750x500.jpg',
       thumbAlt: 'Roboy 2.0 and Roboy Junior.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-v2-pelvis.1217x913.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-v2-pelvis.1217x913.jpg',
       imgWidth: 1217,
       imgHeight: 913,
-      thumbSrc: '/assets/projects/roboy/roboy-v2-pelvis.666x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-v2-pelvis.666x500.jpg',
       thumbAlt: '3D-printed pelvis of Roboy 2.0.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/roboy/roboy-v2-body.1280x853.jpg',
+      imgSrc: baseUrl + 'assets/projects/roboy/roboy-v2-body.1280x853.jpg',
       imgWidth: 1280,
       imgHeight: 853,
-      thumbSrc: '/assets/projects/roboy/roboy-v2-body.750x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/roboy/roboy-v2-body.750x500.jpg',
       thumbAlt: 'Assembled body of Roboy 2.0.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,

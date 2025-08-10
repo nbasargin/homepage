@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const insarSoilMoistureDescription: ProjectDescription = {
   title: 'InSAR Soil Moisture',
   description: 'Estimation of soil moisture using InSAR data',
-  imageUrl: '/assets/placeholder.png',
+  imageUrl: baseUrl + 'assets/placeholder.png',
   detailsLink: '/insar-soil-moisture',
 };
 
@@ -27,9 +28,6 @@ export const insarSoilMoistureDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

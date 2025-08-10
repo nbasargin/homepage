@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const gediTdxDescription: ProjectDescription = {
   title: 'GEDI-TDX',
   description: 'GEDI-TDX data fusion for forest structure analysis',
-  imageUrl: '/assets/projects/gedi-tdx/gedi-tdx-preview.700x400.jpg',
+  imageUrl: baseUrl + 'assets/projects/gedi-tdx/gedi-tdx-preview.700x400.jpg',
   //detailsLink: '/gedi-tdx',
   externalLink: 'https://gedi.umd.edu/applications/gedi-tandem-x/',
 };
@@ -28,9 +29,6 @@ export const gediTdxDescription: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',

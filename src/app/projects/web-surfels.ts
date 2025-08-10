@@ -5,11 +5,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 import { GalleryComponent, GalleryImage } from '../gallery/gallery';
+import { baseUrl } from '../../environments/environment';
 
 export const webSurfelsDescription: ProjectDescription = {
   title: 'WebSurfels',
   description: 'High-Quality Point Cloud Rendering in WebGL',
-  imageUrl: '/assets/projects/web-surfels/web-surfels-preview.700x400.jpg',
+  imageUrl: baseUrl + 'assets/projects/web-surfels/web-surfels-preview.700x400.jpg',
   detailsLink: '/web-surfels',
 };
 
@@ -94,19 +95,19 @@ export const webSurfelsDescription: ProjectDescription = {
 export class WebSurfelsComponent {
   neuschwansteinImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-neuschwanstein-01.1492x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-neuschwanstein-01.1492x1330.jpg',
       imgWidth: 1492,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-neuschwanstein-01.561x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-neuschwanstein-01.561x500.jpg',
       thumbAlt: 'Rendered point cloud of the Neuschwanstein Castle, view from above.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-neuschwanstein-02.1873x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-neuschwanstein-02.1873x1330.jpg',
       imgWidth: 1873,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-neuschwanstein-02.704x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-neuschwanstein-02.704x500.jpg',
       thumbAlt: 'Rendered point cloud of the Neuschwanstein Castle, view the courtyard.',
       thumbClass: 'img-rounded img-h250',
       thumbCropped: false,
@@ -115,28 +116,28 @@ export class WebSurfelsComponent {
 
   dragonImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-dragon-01.1380x1165.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-01.1380x1165.jpg',
       imgWidth: 1380,
       imgHeight: 1165,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-dragon-01.592x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-01.592x500.jpg',
       thumbAlt: 'Low-resolution Stanford dragon, 1210 splats.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-dragon-02.1380x1165.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-02.1380x1165.jpg',
       imgWidth: 1380,
       imgHeight: 1165,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-dragon-02.592x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-02.592x500.jpg',
       thumbAlt: 'Medium-resolution Stanford dragon, 27869 splats.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-dragon-03.1380x1165.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-03.1380x1165.jpg',
       imgWidth: 1380,
       imgHeight: 1165,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-dragon-03.592x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-dragon-03.592x500.jpg',
       thumbAlt: 'High-resolution Stanford dragon, 435545 splats.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -145,19 +146,19 @@ export class WebSurfelsComponent {
 
   streetViewImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-street-view-01.2079x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-street-view-01.2079x1330.jpg',
       imgWidth: 2079,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-street-view-01.782x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-street-view-01.782x500.jpg',
       thumbAlt: 'Point cloud reconstructed from Google Street View in Paris, view from above.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-street-view-02.1661x1063.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-street-view-02.1661x1063.jpg',
       imgWidth: 1661,
       imgHeight: 1063,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-street-view-02.781x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-street-view-02.781x500.jpg',
       thumbAlt: 'Point cloud reconstructed from Google Street View in Paris, view from the street.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
@@ -166,28 +167,28 @@ export class WebSurfelsComponent {
 
   sphereImages: Array<GalleryImage> = [
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-sphere-01.1330x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-01.1330x1330.jpg',
       imgWidth: 1330,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-sphere-01.500x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-01.500x500.jpg',
       thumbAlt: 'Rendered Sphere, small splats, no color blending.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-sphere-02.1330x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-02.1330x1330.jpg',
       imgWidth: 1330,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-sphere-02.500x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-02.500x500.jpg',
       thumbAlt: 'Rendered Sphere, larger overlapping splats, no color blending.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
     {
-      imgSrc: '/assets/projects/web-surfels/web-surfels-sphere-03.1330x1330.jpg',
+      imgSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-03.1330x1330.jpg',
       imgWidth: 1330,
       imgHeight: 1330,
-      thumbSrc: '/assets/projects/web-surfels/web-surfels-sphere-03.500x500.jpg',
+      thumbSrc: baseUrl + 'assets/projects/web-surfels/web-surfels-sphere-03.500x500.jpg',
       thumbAlt: 'Rendered Sphere, larger splats with color blending.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,

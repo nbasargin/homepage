@@ -4,11 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { baseUrl } from '../../environments/environment';
 
 export const fsarCropex25Description: ProjectDescription = {
   title: 'CROPEX 2025',
   description: 'Experimental F-SAR airborne campaign',
-  imageUrl: '/assets/projects/cropex-2025/cropex-2025-preview.700x400.jpg',
+  imageUrl: baseUrl + 'assets/projects/cropex-2025/cropex-2025-preview.700x400.jpg',
   // detailsLink: '/cropex-2025',
   externalLink:
     'https://www.dlr.de/en/latest/news/2025/test-flights-over-bavaria-inform-upcoming-earth-observation-space-missions',
@@ -29,9 +30,6 @@ export const fsarCropex25Description: ProjectDescription = {
     </div>
 
     <div class="block-subtitle">Subtitle</div>
-    <div class="image-container">
-      <img src="/assets/placeholder.png" class="img-rounded img-h400" alt="image" />
-    </div>
     <p>Details</p>
   `,
   styles: '',
