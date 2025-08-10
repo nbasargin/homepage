@@ -26,14 +26,14 @@ export const roboyDescription: ProjectDescription = {
           such as hackathons, lab tours, and presentations at exhibitions.
         </p>
 
-        <div class="button-row mb-l">
+        <div class="button-row">
           <a mat-flat-button href="https://roboy.org/" target="_blank">
             <mat-icon>open_in_new</mat-icon>
             roboy.org
           </a>
         </div>
 
-        <div class="block-subtitle">Lighthouse Tracking</div>
+        <div class="block-subtitle mt-l">Lighthouse Tracking</div>
 
         <p>
           After the kick-off hackathon in April 2017, I joined the middleware team and worked on the Lighthouse Tracking
@@ -56,7 +56,7 @@ export const roboyDescription: ProjectDescription = {
           signal processing algorithms on an FPGA to enable real-time tracking.
         </p>
 
-        <div class="button-row mb-l">
+        <div class="button-row">
           <a mat-flat-button href="https://arxiv.org/abs/2310.01943" target="_blank">
             <mat-icon fontIcon="open_in_new"></mat-icon>
             Hackaday Article
@@ -67,7 +67,7 @@ export const roboyDescription: ProjectDescription = {
           </a>
         </div>
 
-        <div class="block-subtitle">Robotics Lab Tour</div>
+        <div class="block-subtitle mt-l">Robotics Lab Tour</div>
         <p>
           After summer semester 2017, the Roboy team organized a trip to visit several robotics labs in Germany, France,
           and Switzerland. We visited HBP Neuromorphic Computing (Heidelberg), HBP Neurorobotics (Karlsruhe), High
@@ -75,7 +75,7 @@ export const roboyDescription: ProjectDescription = {
           (Poitiers), Génération Robots (Mérignac), Flowers Lab (Talence), and EPFL BioRob (Lausanne).
         </p>
 
-        <div class="image-container mb-l">
+        <div class="image-container">
           <img
             src="/assets/projects/roboy-lab-tour-karlsruhe-h400.jpg"
             class="img-rounded img-h250"
@@ -98,7 +98,7 @@ export const roboyDescription: ProjectDescription = {
           />
         </div>
 
-        <div class="block-subtitle">Roboy Dialog System</div>
+        <div class="block-subtitle mt-l">Roboy Dialog System</div>
         <p>
           In the winter semester 2017-2018, I joined the cognition team and worked on the Roboy Dialog System. Before
           LLMs became popular, we focused on rule-based approaches and state machines for dialog management.
@@ -117,7 +117,7 @@ export const roboyDescription: ProjectDescription = {
           summary of the Ravestate system was later published as a preprint on arXiv.
         </p>
 
-        <div class="button-row mb-l">
+        <div class="button-row">
           <a mat-flat-button href="https://arxiv.org/abs/2310.01943" target="_blank">
             <mat-icon fontIcon="open_in_new"></mat-icon>
             Ravestate Summary
@@ -143,7 +143,7 @@ export const roboyDescription: ProjectDescription = {
         2018-03-29 Roboy Hotpot
         -->
 
-        <div class="block-subtitle">Building Roboy 2.0</div>
+        <div class="block-subtitle mt-l">Building Roboy 2.0</div>
 
         <p>
           Winter semester 2017-2018 was also the time when the Roboy team started building Roboy 2.0. Many parts have
@@ -152,7 +152,7 @@ export const roboyDescription: ProjectDescription = {
           Museum in Munich.
         </p>
 
-        <div class="image-container mb-l">
+        <div class="image-container">
           <img
             src="/assets/projects/roboy-junior-and-v2-h400.jpg"
             class="img-rounded img-h250"
@@ -162,7 +162,7 @@ export const roboyDescription: ProjectDescription = {
           <img src="/assets/projects/roboy-v2-body-h400.jpg" class="img-rounded img-h250" alt="Assembled body" />
         </div>
 
-        <div class="block-subtitle">Supervising Student Teams</div>
+        <div class="block-subtitle mt-l">Supervising Student Teams</div>
 
         <p>
           In the summer semester 2018 I had a chance to supervise two student teams: BotBoy and TalkToTwo. BotBoy

@@ -33,11 +33,10 @@ export const tensorDecompDescription: ProjectDescription = {
           [place]="'IEEE TGRS'"
           [time]="'2023'"
           [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
-          class="mb-l"
         >
         </hp-list-entry>
 
-        <div class="block-subtitle">Constrained Decompositions</div>
+        <div class="block-subtitle mt-l">Constrained Decompositions</div>
         <p>
           Standard methods like Canonical Polyadic (CP) and Tucker tensor decompositions are commonly used for
           multidimensional data analysis.
@@ -66,7 +65,7 @@ export const tensorDecompDescription: ProjectDescription = {
           />
         </div>
 
-        <div class="block-subtitle">Decomposition as an Optimization Problem</div>
+        <div class="block-subtitle mt-l">Decomposition as an Optimization Problem</div>
         <p>
           The decomposition is formulated as an optimization problem, and is solved by iterative gradient descent. In
           the forward pass, the method starts with unconstrained factors and applies constraint functions to restrict
@@ -83,7 +82,7 @@ export const tensorDecompDescription: ProjectDescription = {
           optimization step is performed to update the factors. The process is repeated until convergence.
         </p>
 
-        <div class="block-subtitle">Polarimetric Time Series Analysis</div>
+        <div class="block-subtitle mt-l">Polarimetric Time Series Analysis</div>
         <p>
           The proposed framework is applied to polarimetric SAR time series data to analyze changes over agricultural
           areas. The obtained temporal factors describe the changes in the signal in a compact way and show a

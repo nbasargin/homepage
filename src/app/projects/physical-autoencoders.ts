@@ -36,13 +36,12 @@ export const physicalAutoencodersDescription: ProjectDescription = {
             'https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Basargin_Explainable_Physical_PolSAR_Autoencoders_for_Soil_Moisture_Estimation_CVPRW_2025_paper.pdf'
           "
           [githubLink]="'https://github.com/nbasargin/nb2025earthvision'"
-          class="mb-l"
         >
         </hp-list-entry>
 
         <!-- TODO: poster link -->
 
-        <div class="block-subtitle">Physics Meets Machine Learning</div>
+        <div class="block-subtitle mt-l">Physics Meets Machine Learning</div>
 
         <p>
           Geophysical parameter estimation techniques from SAR data can be broadly categorized into physics-based models
@@ -85,7 +84,7 @@ export const physicalAutoencodersDescription: ProjectDescription = {
           prediction performance.
         </p>
 
-        <div class="block-subtitle">EarthVision and CVPR 2025</div>
+        <div class="block-subtitle mt-l">EarthVision and CVPR 2025</div>
 
         <p>The conference took place in Nashville, Tennessee, USA. Here are some impressions.</p>
 

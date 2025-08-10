@@ -28,7 +28,7 @@ export const webSurfelsDescription: ProjectDescription = {
           splatting technique, where colors of adjacent normal-aligned 2D splats are smoothly blended together.
         </p>
 
-        <div class="button-row mb-l">
+        <div class="button-row">
           <a mat-flat-button href="https://nbasargin.github.io/WebSurfels-Demo/" target="_blank">
             <mat-icon>rocket_launch</mat-icon>
             Demo
@@ -39,7 +39,7 @@ export const webSurfelsDescription: ProjectDescription = {
           </a>
         </div>
 
-        <div class="block-subtitle">Neuschwanstein Castle Demo</div>
+        <div class="block-subtitle mt-l">Neuschwanstein Castle Demo</div>
         <p>
           To render large datasets with millions of points, a hierarchical level-of-detail (LOD) tree is used. This
           structure is constructed from the original data in a preprocessing step using an octree and stores LOD
@@ -63,7 +63,7 @@ export const webSurfelsDescription: ProjectDescription = {
           improve performance. Appropriate levels-of-detail are dynamically chosen as the user zooms in and out.
         </p>
 
-        <div class="block-subtitle">Stanford Dragon Demo</div>
+        <div class="block-subtitle mt-l mb-m">Stanford Dragon Demo</div>
         <div class="image-container">
           <img
             src="/assets/projects/web-surfels-dragon-01-h500.jpg"
@@ -86,7 +86,7 @@ export const webSurfelsDescription: ProjectDescription = {
           browser. Here, 1210, 27869, and 435545 splats are rendered for different levels-of-detail.
         </p>
 
-        <div class="block-subtitle">Google Street View Demo</div>
+        <div class="block-subtitle mt-l mb-m">Google Street View Demo</div>
         <div class="image-container">
           <img
             src="/assets/projects/web-surfels-street-view-01-h500.jpg"
@@ -109,7 +109,7 @@ export const webSurfelsDescription: ProjectDescription = {
           Note: the street view API has changed since 2020, so the demo is running on the old cached data.
         </p>
 
-        <div class="block-subtitle">Sphere Demo</div>
+        <div class="block-subtitle mt-l mb-m">Sphere Demo</div>
         <div class="image-container">
           <img
             src="/assets/projects/web-surfels-sphere-01-h500.jpg"

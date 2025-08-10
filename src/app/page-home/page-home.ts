@@ -79,7 +79,7 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
 
     <div class="grid-800 pt-l pb-l">
       <div class="center-col">
-        <div class="block-title mb-m">Research & Development Experience</div>
+        <div class="block-title mb-m">Work Experience</div>
         <div class="about-grid">
           <hp-list-entry
             [title]="'Software Engineer'"
