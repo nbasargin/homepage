@@ -3,7 +3,7 @@ import { PageHomeComponent } from './page-home/page-home';
 import { PageProjectsComponent } from './page-projects/page-projects';
 import { AbizeitungComponent } from './projects/abizeitung';
 import { SarTensorsComponent } from './projects/sar-tensors';
-import { FsarCropex25Component } from './projects/fsar-cropex-25';
+import { Cropex2025Component } from './projects/cropex-2025';
 import { GediTdxComponent } from './projects/gedi-tdx';
 import { InsarSoilMoistureComponent } from './projects/insar-soil-moisture';
 import { NetGyroBoyComponent } from './projects/net-gyro-boy';
@@ -34,8 +34,8 @@ export const routes: Routes = [
     component: SarTensorsComponent,
   },
   {
-    path: 'fsar-cropex-25',
-    component: FsarCropex25Component,
+    path: 'cropex-2025',
+    component: Cropex2025Component,
   },
   {
     path: 'gedi-tdx',

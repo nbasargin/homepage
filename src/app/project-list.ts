@@ -1,7 +1,7 @@
 import { ProjectDescription } from './projects/project-description';
 import { abizeitungDescription } from './projects/abizeitung';
 import { sarTensorsDescription } from './projects/sar-tensors';
-import { fsarCropex25Description } from './projects/fsar-cropex-25';
+import { fsarCropex25Description } from './projects/cropex-2025';
 import { gediTdxDescription } from './projects/gedi-tdx';
 import { insarSoilMoistureDescription } from './projects/insar-soil-moisture';
 import { netGyroBoyDescription } from './projects/net-gyro-boy';

@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const webSphDescription: ProjectDescription = {
   title: 'WebSPH',
   description: "Bachelor's thesis, Interactive Simulation of Floods Using the SPH Method",
-  imageUrl: '/assets/projects/web-sph-preview.jpg',
+  imageUrl: '/assets/projects/web-sph/web-sph-preview.700x400.jpg',
   // detailsLink: '/web-sph',
   externalLink: 'https://websph.azurewebsites.net/',
 };

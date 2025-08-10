@@ -8,7 +8,7 @@ import { ProjectDescription } from './project-description';
 export const gediTdxDescription: ProjectDescription = {
   title: 'GEDI-TDX',
   description: 'GEDI-TDX data fusion for forest structure analysis',
-  imageUrl: '/assets/projects/gedi-tdx-preview.jpg',
+  imageUrl: '/assets/projects/gedi-tdx/gedi-tdx-preview.700x400.jpg',
   //detailsLink: '/gedi-tdx',
   externalLink: 'https://gedi.umd.edu/applications/gedi-tandem-x/',
 };

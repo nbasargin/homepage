@@ -8,8 +8,8 @@ import { ProjectDescription } from './project-description';
 export const fsarCropex25Description: ProjectDescription = {
   title: 'CROPEX 2025',
   description: 'Experimental F-SAR airborne campaign',
-  imageUrl: '/assets/projects/fsar-cropex-25-preview.jpg',
-  // detailsLink: '/fsar-cropex-25',
+  imageUrl: '/assets/projects/cropex-2025/cropex-2025-preview.700x400.jpg',
+  // detailsLink: '/cropex-2025',
   externalLink:
     'https://www.dlr.de/en/latest/news/2025/test-flights-over-bavaria-inform-upcoming-earth-observation-space-missions',
 };
@@ -18,7 +18,7 @@ export const fsarCropex25Description: ProjectDescription = {
   selector: 'hp-projects-fsar-cropex25',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule],
   template: `
-    <div class="block-title">F-SAR CROPEX 2025 Campaign</div>
+    <div class="block-title">CROPEX 2025</div>
 
     <p>F-SAR CROPEX 2025 Campaign description</p>
     <div class="button-row">
@@ -36,4 +36,4 @@ export const fsarCropex25Description: ProjectDescription = {
   `,
   styles: '',
 })
-export class FsarCropex25Component {}
+export class Cropex2025Component {}

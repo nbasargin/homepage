@@ -10,7 +10,7 @@ import { GalleryComponent, GalleryImage } from '../gallery/gallery';
 export const physicalAutoencodersDescription: ProjectDescription = {
   title: 'Physical Autoencoders',
   description: 'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation',
-  imageUrl: '/assets/projects/physical-autoencoders-preview.png',
+  imageUrl: '/assets/projects/physical-autoencoders/physical-autoencoders-preview.700x400.png',
   detailsLink: '/physical-autoencoders',
 };
 
