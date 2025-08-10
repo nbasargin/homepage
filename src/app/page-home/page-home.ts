@@ -97,7 +97,7 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
         <div class="block-title mb-m">Education</div>
         <div class="about-grid">
           <hp-list-entry
-            [title]="'PhD in Data Science and Remote Sensing'"
+            [title]="'(Ongoing) PhD in Data Science and Remote Sensing'"
             [descriptionLines]="['Topic: Bio- and Geophysical Parameter Estimation from Multidimensional SAR Data']"
             [place]="'DLR, TUM, MUDS, Munich'"
             [time]="'2021 - now'"
@@ -106,10 +106,7 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
 
           <hp-list-entry
             [title]="'Master of Informatics'"
-            [descriptionLines]="[
-              'Passed with high distinction, grade: 1.0',
-              'Thesis: High-Quality Point Cloud Rendering in WebGL',
-            ]"
+            [descriptionLines]="['Passed with high distinction', 'Thesis: High-Quality Point Cloud Rendering in WebGL']"
             [place]="'TUM, Munich'"
             [time]="'2017 - 2020'"
             [place2]="'UOW, Australia'"
@@ -120,7 +117,7 @@ import { HIGHLIGHT_PROJECTS } from '../project-list';
           <hp-list-entry
             [title]="'Bachelor of Informatics'"
             [descriptionLines]="[
-              'Passed with high distinction, grade: 1.1',
+              'Passed with high distinction',
               'Thesis: Interactive simulation of floods using the SPH method',
             ]"
             [place]="'TUM, Munich'"
