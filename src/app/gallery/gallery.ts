@@ -32,26 +32,7 @@ export interface GalleryImage {
   styleUrl: 'gallery.css',
 })
 export class GalleryComponent implements AfterViewInit, OnDestroy {
-  images = input<Array<GalleryImage>>([
-    {
-      imgSrc: '/assets/projects/web-surfels-neuschwanstein-01-h500.jpg',
-      imgWidth: 561,
-      imgHeight: 500,
-      thumbSrc: '/assets/projects/web-surfels-neuschwanstein-01-h500.jpg',
-      thumbAlt: 'Thumbnail 1',
-      thumbClass: 'img-rounded img-h250',
-      thumbCropped: false,
-    },
-    {
-      imgSrc: '/assets/projects/web-surfels-neuschwanstein-02-h500.jpg',
-      imgWidth: 704,
-      imgHeight: 500,
-      thumbSrc: '/assets/projects/web-surfels-neuschwanstein-02-h500.jpg',
-      thumbAlt: 'Thumbnail 2',
-      thumbClass: 'img-rounded img-h250',
-      thumbCropped: false,
-    },
-  ]);
+  images = input.required<Array<GalleryImage>>();
 
   galleryId = `gallery_${Math.round(Math.random() * 9999999)}`;
   private lightbox: PhotoSwipeLightbox = new PhotoSwipeLightbox({
