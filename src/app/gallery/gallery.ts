@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { AfterViewInit, Component, input, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
@@ -18,18 +18,18 @@ export interface GalleryImage {
   selector: 'hp-gallery',
   imports: [CommonModule, MatIconModule],
   template: `
-    <div class="psw-gallery" [id]="galleryId()">
-      @for (image of images(); track image) {
-        <a [href]="image.imgSrc" [attr.data-pswp-width]="image.imgWidth" [attr.data-pswp-height]="image.imgHeight">
-          <img [src]="image.thumbSrc" [alt]="image.thumbAlt" [classList]="image.thumbClass" />
-        </a>
-      }
-    </div>
+    @for (image of images(); track image) {
+      <a [href]="image.imgSrc" [attr.data-pswp-width]="image.imgWidth" [attr.data-pswp-height]="image.imgHeight">
+        <img [src]="image.thumbSrc" [alt]="image.thumbAlt" [classList]="image.thumbClass" />
+      </a>
+    }
   `,
+  host: {
+    '[attr.id]': 'galleryId',
+  },
   styleUrl: 'gallery.css',
 })
-export class GalleryComponent {
-  galleryId = input<string>('gallery_' + Math.round(Math.random() * 9999999).toString());
+export class GalleryComponent implements AfterViewInit, OnDestroy {
   images = input<Array<GalleryImage>>([
     {
       imgSrc: '/assets/projects/web-surfels-neuschwanstein-01-h500.jpg',
@@ -51,13 +51,18 @@ export class GalleryComponent {
     },
   ]);
 
+  galleryId = `gallery_${Math.round(Math.random() * 9999999)}`;
+  private lightbox: PhotoSwipeLightbox = new PhotoSwipeLightbox({
+    gallery: `#${this.galleryId}`,
+    children: 'a',
+    pswpModule: PhotoSwipe,
+  });
+
   ngAfterViewInit() {
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: `#${this.galleryId()}`,
-      children: 'a',
-      showHideAnimationType: 'zoom',
-      pswpModule: PhotoSwipe,
-    });
-    lightbox.init();
+    this.lightbox.init();
+  }
+
+  ngOnDestroy(): void {
+    this.lightbox.destroy();
   }
 }
