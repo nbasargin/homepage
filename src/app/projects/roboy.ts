@@ -4,17 +4,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
+import { GalleryComponent, GalleryImage } from '../gallery/gallery';
 
 export const roboyDescription: ProjectDescription = {
   title: 'Roboy',
   description: 'Roboy student team, middleware and cognition projects',
-  imageUrl: '/assets/projects/roboy-cognition-preview.jpg',
+  imageUrl: '/assets/projects/roboy/roboy-preview.700x400.png',
   detailsLink: '/roboy',
 };
 
 @Component({
   selector: 'hp-projects-roboy',
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule],
+  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, GalleryComponent],
   template: `
     <div class="grid-800 pt-l pb-l">
       <div class="center-col">
@@ -41,14 +42,7 @@ export const roboyDescription: ProjectDescription = {
           receiving infrared pulses emitted by HTC Vive lighthouses.
         </p>
 
-        <div class="image-container">
-          <img
-            src="/assets/projects/roboy-lighthouse-tracking-h400.png"
-            class="img-rounded img-h200"
-            alt="lighthouses and sensors"
-          />
-          <img src="/assets/projects/roboy-de0-nano-h400.jpg" class="img-rounded img-h200" alt="DE0-nano board" />
-        </div>
+        <hp-gallery [images]="lighthouseImages"></hp-gallery>
 
         <p>
           The lighthouses regularly sweep the room in horizontal and vertical directions. Based on the timing of the
@@ -75,41 +69,15 @@ export const roboyDescription: ProjectDescription = {
           (Poitiers), Génération Robots (Mérignac), Flowers Lab (Talence), and EPFL BioRob (Lausanne).
         </p>
 
-        <div class="image-container">
-          <img
-            src="/assets/projects/roboy-lab-tour-karlsruhe-h400.jpg"
-            class="img-rounded img-h250"
-            alt="Lauron robot, HBP Neurorobotics, Karlsruhe"
-          />
-          <img
-            src="/assets/projects/roboy-lab-tour-robioss-h400.jpg"
-            class="img-rounded img-h250"
-            alt="Robotic hand, RoBioSS, Poitiers"
-          />
-          <img
-            src="/assets/projects/roboy-lab-tour-talence-h400.jpg"
-            class="img-rounded img-h250"
-            alt="Poppy robots, Flowers Lab, Talence"
-          />
-          <img
-            src="/assets/projects/roboy-lab-tour-epfl-h400.jpg"
-            class="img-rounded img-h250"
-            alt="Pleurobot, EPFL BioRob, Lausanne"
-          />
-        </div>
+        <hp-gallery [images]="labTourImages"></hp-gallery>
 
         <div class="block-subtitle mt-l">Roboy Dialog System</div>
         <p>
           In the winter semester 2017-2018, I joined the cognition team and worked on the Roboy Dialog System. Before
           LLMs became popular, we focused on rule-based approaches and state machines for dialog management.
         </p>
-        <div class="image-container">
-          <img
-            src="/assets/projects/roboy-dialog-states-h400.jpg"
-            class="img-rounded img-h250"
-            alt="State transitions"
-          />
-        </div>
+
+        <hp-gallery [images]="dialogImages"></hp-gallery>
 
         <p>
           During the following semesters, the dialog system was improved and rewritten from Java to Python. Here, my
@@ -152,15 +120,7 @@ export const roboyDescription: ProjectDescription = {
           Museum in Munich.
         </p>
 
-        <div class="image-container">
-          <img
-            src="/assets/projects/roboy-junior-and-v2-h400.jpg"
-            class="img-rounded img-h250"
-            alt="Roboy Junior and Roboy v2.0"
-          />
-          <img src="/assets/projects/roboy-v2-pelvis-h400.jpg" class="img-rounded img-h250" alt="3D printed pelvis" />
-          <img src="/assets/projects/roboy-v2-body-h400.jpg" class="img-rounded img-h250" alt="Assembled body" />
-        </div>
+        <hp-gallery [images]="roboyV2Images"></hp-gallery>
 
         <div class="block-subtitle mt-l">Supervising Student Teams</div>
 
@@ -169,10 +129,6 @@ export const roboyDescription: ProjectDescription = {
           focused on refining the dialog system and implementation of a Telegram chatbot. TalkToTwo worked on improving
           the audio processing and distinguishing between different speakers.
         </p>
-
-        <div class="image-container">
-          <img src="/assets/projects/roboy-logo-h400.png" class="img-rounded img-h200" alt="Roboy logo" />
-        </div>
 
         <!--
         SS18 events:
@@ -198,4 +154,106 @@ export const roboyDescription: ProjectDescription = {
   `,
   styles: '',
 })
-export class RoboyComponent {}
+export class RoboyComponent {
+  lighthouseImages: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/roboy/roboy-lighthouse-tracking.1078x622.png',
+      imgWidth: 1078,
+      imgHeight: 622,
+      thumbSrc: '/assets/projects/roboy/roboy-lighthouse-tracking.693x400.png',
+      thumbAlt: 'Lighthouses and sensors',
+      thumbClass: 'img-rounded img-h200',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-de0-nano.2730x1851.jpg',
+      imgWidth: 2730,
+      imgHeight: 1851,
+      thumbSrc: '/assets/projects/roboy/roboy-de0-nano.590x400.jpg',
+      thumbAlt: 'DE0-nano board',
+      thumbClass: 'img-rounded img-h200',
+      thumbCropped: false,
+    },
+  ];
+
+  labTourImages: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/roboy/roboy-lab-tour-karlsruhe.4160x3120.jpg',
+      imgWidth: 4160,
+      imgHeight: 3120,
+      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-karlsruhe.667x500.jpg',
+      thumbAlt: 'Lauron robot, HBP Neurorobotics, Karlsruhe',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-lab-tour-robioss.4160x3120.jpg',
+      imgWidth: 4160,
+      imgHeight: 3120,
+      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-robioss.667x500.jpg',
+      thumbAlt: 'Robotic hand, RoBioSS, Poitiers',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-lab-tour-talence.3120x2340.jpg',
+      imgWidth: 3120,
+      imgHeight: 2340,
+      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-talence.667x500.jpg',
+      thumbAlt: 'Poppy robots, Flowers Lab, Talence',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-lab-tour-epfl.3655x2741.jpg',
+      imgWidth: 3655,
+      imgHeight: 2741,
+      thumbSrc: '/assets/projects/roboy/roboy-lab-tour-epfl.667x500.jpg',
+      thumbAlt: 'Pleurobot, EPFL Biorob, Lausanne',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+  ];
+
+  dialogImages: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/roboy/roboy-dialog-states.2505x1408.png',
+      imgWidth: 2505,
+      imgHeight: 1408,
+      thumbSrc: '/assets/projects/roboy/roboy-dialog-states.890x500.png',
+      thumbAlt: 'Dialog system state transitions',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+  ];
+
+  roboyV2Images: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/roboy/roboy-junior-and-v2.1280x853.jpg',
+      imgWidth: 1280,
+      imgHeight: 853,
+      thumbSrc: '/assets/projects/roboy/roboy-junior-and-v2.750x500.jpg',
+      thumbAlt: 'Roboy Junior and Roboy v2.0',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-v2-pelvis.1217x913.jpg',
+      imgWidth: 1217,
+      imgHeight: 913,
+      thumbSrc: '/assets/projects/roboy/roboy-v2-pelvis.666x500.jpg',
+      thumbAlt: '3D printed pelvis',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+    {
+      imgSrc: '/assets/projects/roboy/roboy-v2-body.1280x853.jpg',
+      imgWidth: 1280,
+      imgHeight: 853,
+      thumbSrc: '/assets/projects/roboy/roboy-v2-body.750x500.jpg',
+      thumbAlt: 'Assembled body',
+      thumbClass: 'img-rounded img-h250',
+      thumbCropped: false,
+    },
+  ];
+}
