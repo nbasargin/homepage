@@ -11,12 +11,12 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule, RouterModule],
   template: `
     @if (projectData(); as projectData) {
-      <mat-card>
+      <mat-card class="mat-project-card">
         <img class="project-image" mat-card-image [src]="projectData.imageUrl" />
         <mat-card-header>
           <mat-card-title>{{ projectData.title }} </mat-card-title>
         </mat-card-header>
-        <mat-card-content>
+        <mat-card-content class="project-description">
           <p>{{ projectData.description }}</p>
         </mat-card-content>
         @if (projectData.detailsLink || projectData.externalLink) {
