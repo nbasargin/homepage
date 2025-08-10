@@ -41,17 +41,17 @@
 /* Projects */
 
 .projects-section {
-  background: #004d61;
+  background: var(--mat-sys-primary-container);
 }
 
 /* CV */
 
 .awards-section {
-  background: #3e5641;
+  background: var(--mat-sys-primary-container);
 }
 
 .education-section {
-  background: #822659;
+  background: var(--mat-sys-primary-container);
 }
 
 .about-grid {

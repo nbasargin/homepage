@@ -24,7 +24,7 @@ html {
   max-width: 100%;
   @include mat.theme(
     (
-      color: mat.$violet-palette,
+      color: mat.$cyan-palette,
       typography: Roboto,
       density: 0,
     )
