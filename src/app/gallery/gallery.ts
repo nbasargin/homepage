@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import PhotoSwipe from 'photoswipe';
+// @ts-expect-error
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 export interface GalleryImage {
   imgSrc: string;
@@ -59,6 +61,7 @@ export class GalleryComponent implements AfterViewInit, OnDestroy {
   });
 
   ngAfterViewInit() {
+    new PhotoSwipeDynamicCaption(this.lightbox, { type: 'below' });
     this.lightbox.init();
   }
 

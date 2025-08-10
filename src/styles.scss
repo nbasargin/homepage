@@ -184,3 +184,10 @@ body {
 .mat-elevation-24 {
   @include mat.elevation(24);
 }
+
+/* PhotoSwipe  */
+.pswp__dynamic-caption--below {
+  max-width: unset;
+  text-align: center;
+  padding: var(--glob-spacing-m) 0 var(--glob-spacing-m);
+}

@@ -88,7 +88,8 @@ export class SarTensorsComponent {
       imgWidth: 1500,
       imgHeight: 500,
       thumbSrc: '/assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
-      thumbAlt: 'CP decomposition',
+      thumbAlt:
+        'CP decomposition decomposes a tensor into a sum of components, each reconstructed from factor vectors.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
@@ -100,7 +101,8 @@ export class SarTensorsComponent {
       imgWidth: 1500,
       imgHeight: 500,
       thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
-      thumbAlt: 'Constrained decomposition',
+      thumbAlt:
+        'Constrained decomposition extends the CP decomposition and allows to set different constraints on the factors.',
       thumbClass: 'img-rounded img-h200',
       thumbCropped: false,
     },
@@ -112,7 +114,7 @@ export class SarTensorsComponent {
       imgWidth: 1500,
       imgHeight: 800,
       thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
-      thumbAlt: 'Forward pass',
+      thumbAlt: 'Forward pass reconstructs the tensor and computes the distance to the input data.',
       thumbClass: 'img-rounded img-h300',
       thumbCropped: false,
     },
