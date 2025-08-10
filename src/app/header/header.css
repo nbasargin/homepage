@@ -22,13 +22,14 @@
   font-size: 18px;
   line-height: var(--glob-header-height);
   height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background: color-mix(in srgb, var(--mat-sys-on-surface) 5%, transparent);
+  }
 
   &.active {
     border-bottom: 2px solid var(--mat-sys-on-surface);
     background: color-mix(in srgb, var(--mat-sys-on-surface) 10%, transparent);
   }
-}
-
-.navbar-link {
-  cursor: pointer;
 }

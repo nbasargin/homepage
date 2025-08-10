@@ -8,11 +8,11 @@ import { MatTabsModule } from '@angular/material/tabs';
   template: `
     <nav class="grid-800">
       <div class="center-col navbar">
-        <div class="navbar-item" routerLinkActive="active">
-          <span class="navbar-link" routerLink="/home">Home</span>
+        <div class="navbar-item" routerLinkActive="active" routerLink="/home">
+          <span class="navbar-link">Home</span>
         </div>
-        <div class="navbar-item" routerLinkActive="active">
-          <span class="navbar-link" routerLink="/projects">Projects</span>
+        <div class="navbar-item" routerLinkActive="active" routerLink="/projects">
+          <span class="navbar-link">Projects</span>
         </div>
       </div>
     </nav>
