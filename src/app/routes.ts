@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { PageHomeComponent } from './page-home/page-home';
 import { PageProjectsComponent } from './page-projects/page-projects';
 import { AbizeitungComponent } from './projects/abizeitung';
-import { ConstrainedTDComponent } from './projects/tensor-decomp';
+import { SarTensorsComponent } from './projects/sar-tensors';
 import { FsarCropex25Component } from './projects/fsar-cropex-25';
 import { GediTdxComponent } from './projects/gedi-tdx';
 import { InsarSoilMoistureComponent } from './projects/insar-soil-moisture';
@@ -30,8 +30,8 @@ export const routes: Routes = [
     component: AbizeitungComponent,
   },
   {
-    path: 'tensor-decompositions',
-    component: ConstrainedTDComponent,
+    path: 'sar-tensors',
+    component: SarTensorsComponent,
   },
   {
     path: 'fsar-cropex-25',

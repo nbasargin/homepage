@@ -5,23 +5,24 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectDescription } from './project-description';
 import { ListEntryComponent } from '../list-entry/list-entry';
+import { GalleryComponent, GalleryImage } from '../gallery/gallery';
 
-export const tensorDecompDescription: ProjectDescription = {
-  title: 'SAR TD',
-  description: 'Tensor decompositions (TD) for SAR data',
-  imageUrl: '/assets/projects/constrained-td-preview.png',
-  detailsLink: '/tensor-decompositions',
+export const sarTensorsDescription: ProjectDescription = {
+  title: 'SAR Tensors',
+  description: 'Tensor decompositions for SAR data',
+  imageUrl: '/assets/projects/sar-tensors/sar-tensors-constrained-td-preview.700x400.png',
+  detailsLink: '/sar-tensors',
 };
 
 @Component({
-  selector: 'hp-projects-sar-td',
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, ListEntryComponent],
+  selector: 'hp-projects-sar-tensors',
+  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, ListEntryComponent, GalleryComponent],
   template: `
     <div class="grid-800 pt-l pb-l">
       <div class="center-col">
-        <div class="block-title">SAR Tensor Decompositions</div>
+        <div class="block-title">SAR Tensors</div>
         <p>
-          A large portion of my PhD is dedicated to tensor decompositions (TD) for SAR data, which features multiple
+          A large portion of my PhD is dedicated to tensor decompositions for SAR data, which features multiple
           dimensions including time, polarization, and frequency. The main motivation is to extract information along
           several dimensions at once, instead of looking at each data dimension individually. The following publication
           is related to this work:
@@ -42,13 +43,7 @@ export const tensorDecompDescription: ProjectDescription = {
           multidimensional data analysis.
         </p>
 
-        <div class="image-container">
-          <img
-            src="/assets/projects/constrained-td-cp-decomp.png"
-            class="img-rounded img-h200"
-            alt="CP decomposition"
-          />
-        </div>
+        <hp-gallery [images]="cpImage"></hp-gallery>
 
         <p>
           However, when working with SAR data, it is important to incorporate constraints to guarantee physically valid
@@ -57,13 +52,7 @@ export const tensorDecompDescription: ProjectDescription = {
           decompositions. The proposed method enables precise control over the output shape and applied constraints.
         </p>
 
-        <div class="image-container">
-          <img
-            src="/assets/projects/constrained-td-proposed.png"
-            class="img-rounded img-h200"
-            alt="Constrained decomposition"
-          />
-        </div>
+        <hp-gallery [images]="constrainedImage"></hp-gallery>
 
         <div class="block-subtitle mt-l">Decomposition as an Optimization Problem</div>
         <p>
@@ -73,9 +62,7 @@ export const tensorDecompDescription: ProjectDescription = {
           distance between the reconstruction and the input data.
         </p>
 
-        <div class="image-container">
-          <img src="/assets/projects/constrained-td-forward.png" class="img-rounded img-h300" alt="Forward pass" />
-        </div>
+        <hp-gallery [images]="forwardPassImage"></hp-gallery>
 
         <p>
           To minimize the distance, gradients to the unconstrained factors are propagated in the backward pass, and the
@@ -94,4 +81,40 @@ export const tensorDecompDescription: ProjectDescription = {
   `,
   styles: '',
 })
-export class ConstrainedTDComponent {}
+export class SarTensorsComponent {
+  cpImage: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
+      imgWidth: 1500,
+      imgHeight: 500,
+      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-cp-decomp.1500x500.png',
+      thumbAlt: 'CP decomposition',
+      thumbClass: 'img-rounded img-h200',
+      thumbCropped: false,
+    },
+  ];
+
+  constrainedImage: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
+      imgWidth: 1500,
+      imgHeight: 500,
+      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td.1500x500.png',
+      thumbAlt: 'Constrained decomposition',
+      thumbClass: 'img-rounded img-h200',
+      thumbCropped: false,
+    },
+  ];
+
+  forwardPassImage: Array<GalleryImage> = [
+    {
+      imgSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
+      imgWidth: 1500,
+      imgHeight: 800,
+      thumbSrc: '/assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
+      thumbAlt: 'Forward pass',
+      thumbClass: 'img-rounded img-h300',
+      thumbCropped: false,
+    },
+  ];
+}
