@@ -25,7 +25,7 @@ html {
   @include mat.theme(
     (
       color: mat.$cyan-palette,
-      typography: Roboto,
+      typography: 'Fira Sans',
       density: 0,
     )
   );
@@ -35,7 +35,7 @@ body {
   background: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
   position: relative;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
