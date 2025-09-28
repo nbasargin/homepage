@@ -32,8 +32,7 @@ export const sarTensorsDescription: ProjectDescription = {
         <hp-list-entry
           [title]="'Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis'"
           [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
-          [place]="'IEEE TGRS'"
-          [time]="'2023'"
+          [timePlaces]="[{ time: '2023', place: 'IEEE TGRS' }]"
           [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
         >
         </hp-list-entry>

@@ -11,18 +11,24 @@
 }
 
 .item-title {
-  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.description-line {
+  opacity: 0.8;
 }
 
 .location-date {
   display: flex;
   flex-flow: row wrap;
-  gap: 0 var(--glob-spacing-m);
+  opacity: 0.8;
 
   mat-icon {
     font-size: 18px;
     height: 18px;
     width: 18px;
+    flex-shrink: 0;
   }
 }
 
@@ -34,6 +40,7 @@
 
 .date {
   display: flex;
+  min-width: 120px;
   align-items: center;
   gap: var(--glob-spacing-xs);
 }

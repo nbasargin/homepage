@@ -10,36 +10,24 @@ import { MatButtonModule } from '@angular/material/button';
     <div>
       <div class="item-title">{{ title() }}</div>
       @for (line of descriptionLines(); track line) {
-        <div>{{ line }}</div>
+        <div class="description-line">{{ line }}</div>
       }
-      <div class="location-date">
-        @if (place()) {
-          <div class="location">
-            <mat-icon fontIcon="location_on"></mat-icon>
-            <span>{{ place() }}</span>
-          </div>
-        }
-        @if (time()) {
+      @for (tp of timePlaces(); track tp) {
+        <div class="location-date">
           <div class="date">
-            <mat-icon fontIcon="date_range"></mat-icon>
-            <span>{{ time() }}</span>
+            @if (tp.time) {
+              <mat-icon fontIcon="date_range"></mat-icon>
+              <span>{{ tp.time }}</span>
+            }
           </div>
-        }
-      </div>
-      <div class="location-date">
-        @if (place2()) {
           <div class="location">
-            <mat-icon fontIcon="location_on"></mat-icon>
-            <span>{{ place2() }}</span>
+            @if (tp.place) {
+              <mat-icon fontIcon="location_on"></mat-icon>
+              <span>{{ tp.place }}</span>
+            }
           </div>
-        }
-        @if (time2()) {
-          <div class="date">
-            <mat-icon fontIcon="date_range"></mat-icon>
-            <span>{{ time2() }}</span>
-          </div>
-        }
-      </div>
+        </div>
+      }
     </div>
     <div>
       @if (githubLink()) {
@@ -59,10 +47,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class ListEntryComponent {
   title = input<string>('');
   descriptionLines = input<Array<string>>([]);
-  place = input<string>('');
-  time = input<string>('');
-  place2 = input<string>('');
-  time2 = input<string>('');
+  timePlaces = input<Array<{ time: string; place: string }>>([]);
   paperLink = input<string>('');
   githubLink = input<string>('');
 }

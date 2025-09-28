@@ -44,8 +44,7 @@ import { baseUrl } from '../../environments/environment';
           <hp-list-entry
             [title]="'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation'"
             [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
-            [place]="'CVPR Workshops'"
-            [time]="'2025'"
+            [timePlaces]="[{ time: '2025', place: 'CVPR Workshops' }]"
             [paperLink]="
               'https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Basargin_Explainable_Physical_PolSAR_Autoencoders_for_Soil_Moisture_Estimation_CVPRW_2025_paper.pdf'
             "
@@ -55,8 +54,7 @@ import { baseUrl } from '../../environments/environment';
           <hp-list-entry
             [title]="'Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis'"
             [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
-            [place]="'IEEE TGRS'"
-            [time]="'2023'"
+            [timePlaces]="[{ time: '2023', place: 'IEEE TGRS' }]"
             [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
           >
           </hp-list-entry>
@@ -68,12 +66,20 @@ import { baseUrl } from '../../environments/environment';
       <div class="center-col">
         <div class="block-title mb-m">Awards and Scholarships</div>
         <div class="about-grid">
-          <hp-list-entry [title]="'Best Poster Award'" [place]="'IEEE GRSS IADF School'" [time]="'2023'">
+          <hp-list-entry
+            [title]="'Best Poster Award by ESA'"
+            [timePlaces]="[{ time: '2023', place: 'IEEE GRSS IADF School' }]"
+          >
           </hp-list-entry>
-          <hp-list-entry [title]="'Rohde & Schwarz Best-Bachelor-Award'" [place]="'TUM'" [time]="'2017'">
+          <hp-list-entry
+            [title]="'Rohde & Schwarz Best-Bachelor-Award'"
+            [timePlaces]="[{ time: '2017', place: 'TUM, Munich' }]"
+          >
           </hp-list-entry>
-          <hp-list-entry [title]="'best.in.tum'" [place]="'TUM'" [time]="'2016 - 2020'"> </hp-list-entry>
-          <hp-list-entry [title]="'Max Weber Program (MWP) Scholarship'" [time]="'2014 - 2020'"> </hp-list-entry>
+          <hp-list-entry [title]="'best.in.tum'" [timePlaces]="[{ time: '2016 - 2020', place: 'TUM, Munich' }]">
+          </hp-list-entry>
+          <hp-list-entry [title]="'Max Weber Program Scholarship'" [timePlaces]="[{ time: '2014 - 2020', place: '' }]">
+          </hp-list-entry>
         </div>
       </div>
     </div>
@@ -84,9 +90,11 @@ import { baseUrl } from '../../environments/environment';
         <div class="about-grid">
           <hp-list-entry
             [title]="'Software Engineer'"
-            [descriptionLines]="['Web development (Angular & React), Data analytics']"
-            [place]="'Userlane, Munich'"
-            [time]="'2019 - 2021'"
+            [descriptionLines]="[
+              'Implemented data analytics and customer dashboard interfaces using Angular',
+              'Added and extended reusable design system components using Stencil.js',
+            ]"
+            [timePlaces]="[{ time: '2019 - 2021', place: 'Userlane, Munich' }]"
           >
           </hp-list-entry>
         </div>
@@ -99,32 +107,34 @@ import { baseUrl } from '../../environments/environment';
         <div class="about-grid">
           <hp-list-entry
             [title]="'(Ongoing) PhD in Data Science and Remote Sensing'"
-            [descriptionLines]="['Topic: Bio- and Geophysical Parameter Estimation from Multidimensional SAR Data']"
-            [place]="'DLR, TUM, MUDS, Munich'"
-            [time]="'2021 - now'"
+            [descriptionLines]="[
+              'Topic: Geophysical Parameter Estimation from Multidimensional SAR Data',
+              'Focus: Fusion of Physics, Machine Learning, and Tensor Decompositions',
+            ]"
+            [timePlaces]="[{ time: '2021 - now', place: 'DLR, MUDS, TUM' }]"
           >
           </hp-list-entry>
 
           <hp-list-entry
             [title]="'Master of Informatics'"
-            [descriptionLines]="['Passed with high distinction', 'Thesis: High-Quality Point Cloud Rendering in WebGL']"
-            [place]="'TUM, Munich'"
-            [time]="'2017 - 2020'"
-            [place2]="'UOW, Australia'"
-            [time2]="'2018'"
+            [descriptionLines]="['Passed with High Distinction', 'Thesis: High-Quality Point Cloud Rendering in WebGL']"
+            [timePlaces]="[
+              { time: '2017 - 2020', place: 'TUM, Munich' },
+              { time: '2018', place: 'UOW, Wollongong' },
+            ]"
           >
           </hp-list-entry>
 
           <hp-list-entry
             [title]="'Bachelor of Informatics'"
             [descriptionLines]="[
-              'Passed with high distinction',
-              'Thesis: Interactive simulation of floods using the SPH method',
+              'Passed with High Distinction',
+              'Thesis: Interactive Simulation of Floods Using the SPH Method',
             ]"
-            [place]="'TUM, Munich'"
-            [time]="'2014 - 2017'"
-            [place2]="'NUS, Singapore'"
-            [time2]="'2016'"
+            [timePlaces]="[
+              { time: '2014 - 2017', place: 'TUM, Munich' },
+              { time: '2016', place: 'NUS, Singapore' },
+            ]"
           >
           </hp-list-entry>
         </div>

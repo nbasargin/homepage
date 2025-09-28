@@ -32,8 +32,7 @@ export const physicalAutoencodersDescription: ProjectDescription = {
         <hp-list-entry
           [title]="'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation'"
           [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
-          [place]="'CVPR Workshops'"
-          [time]="'2025'"
+          [timePlaces]="[{ time: '2025', place: 'CVPR Workshops' }]"
           [paperLink]="
             'https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Basargin_Explainable_Physical_PolSAR_Autoencoders_for_Soil_Moisture_Estimation_CVPRW_2025_paper.pdf'
           "

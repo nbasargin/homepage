@@ -23,6 +23,7 @@
   line-height: var(--glob-header-height);
   height: 100%;
   cursor: pointer;
+  font-variant: small-caps;
 
   &:hover {
     background: color-mix(in srgb, var(--mat-sys-on-surface) 5%, transparent);
