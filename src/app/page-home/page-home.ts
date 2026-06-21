@@ -9,7 +9,7 @@ import { baseUrl } from '../../environments/environment';
   selector: 'hp-page-home',
   imports: [MatIconModule, ProjectCardComponent, ListEntryComponent],
   template: `
-    <div class="grid-narrow pt-l pb-l">
+    <div class="grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="profile-block">
           <div class="personal-info">
@@ -28,7 +28,7 @@ import { baseUrl } from '../../environments/environment';
 
     <div class="projects-section grid-wide pt-l pb-l">
       <div class="center-col">
-        <div class="block-title centered mb-l">Project Highlights</div>
+        <div class="block-title  mb-l">Project Highlights</div>
         <div class="project-highlight-grid">
           @for (project of HIGHLIGHT_PROJECTS; track $index) {
             <hp-project-card [projectData]="project"></hp-project-card>
@@ -37,10 +37,33 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="publication-section grid-narrow pt-l pb-l">
+    <div class="publication-section grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Selected Publications</div>
         <div class="list-entry-grid">
+          <hp-list-entry
+            [title]="
+              'Covariance Meets Context: Transformer-Based SAR Covariance Prediction Across Frequencies and Time'
+            "
+            [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+            [timePlaces]="[{ time: '2026', place: 'CVPR Workshops' }]"
+            [paperLink]="
+              'https://openaccess.thecvf.com/content/CVPR2026W/EarthVision/papers/Basargin_Covariance_Meets_Context_Transformer-Based_SAR_Covariance_Prediction_Across_Frequencies_and_CVPRW_2026_paper.pdf'
+            "
+            [githubLink]="'https://github.com/nbasargin/sarcoconut'"
+          >
+          </hp-list-entry>
+
+          <hp-list-entry
+            [title]="
+              'Model-Based Tensor Decompositions for Geophysical Parameter Retrieval From Multidimensional SAR Data'
+            "
+            [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+            [timePlaces]="[{ time: '2026', place: 'IEEE TGRS' }]"
+            [paperLink]="'https://ieeexplore.ieee.org/abstract/document/11493477'"
+          >
+          </hp-list-entry>
+
           <hp-list-entry
             [title]="'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation'"
             [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
@@ -62,11 +85,12 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="work-section grid-narrow pt-l pb-l">
+    <div class="work-section grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Work Experience</div>
         <div class="list-entry-grid">
           <hp-list-entry
+            class="wide-list-entry"
             [title]="'Software Engineer'"
             [descriptionLines]="[
               'Implemented data analytics and customer dashboard interfaces using Angular',
@@ -79,11 +103,12 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="education-section grid-narrow pt-l pb-l">
+    <div class="education-section grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Education</div>
         <div class="list-entry-grid">
           <hp-list-entry
+            class="wide-list-entry"
             [title]="'(Ongoing) PhD in Data Science and Remote Sensing'"
             [descriptionLines]="[
               'Topic: Geophysical Parameter Estimation from Multidimensional SAR Data',
@@ -119,13 +144,13 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="awards-section grid-narrow pt-l pb-l">
+    <div class="awards-section grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Awards and Scholarships</div>
         <div class="list-entry-grid">
           <hp-list-entry
             [title]="'Best Poster Award by ESA'"
-            [timePlaces]="[{ time: '2023', place: 'IEEE GRSS IADF School' }]"
+            [timePlaces]="[{ time: '2023', place: 'IEEE GRSS IADF School, Benevento' }]"
           >
           </hp-list-entry>
           <hp-list-entry

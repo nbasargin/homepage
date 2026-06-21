@@ -1,13 +1,11 @@
 :host {
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: min-content 1fr;
   align-items: center;
 }
 
-@media (max-width: 600px) {
-  :host {
-    grid-template-columns: 1fr min-content;
-  }
+.icon-buttons {
+  margin-right: var(--glob-spacing-s);
 }
 
 .item-title {

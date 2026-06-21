@@ -151,13 +151,6 @@ body {
   max-width: 100%;
 }
 
-.list-entry-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--glob-spacing-m);
-  justify-content: start;
-}
-
 .warning-note {
   color: var(--mat-sys-error);
 }

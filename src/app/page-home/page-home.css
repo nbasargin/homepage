@@ -66,6 +66,25 @@
   }
 }
 
+/* Lists */
+
+.list-entry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--glob-spacing-l);
+  justify-content: start;
+}
+
+@media (max-width: 800px) {
+  .list-entry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wide-list-entry {
+  grid-column: 1 / -1;
+}
+
 .work-section {
   background: var(--mat-sys-primary-container);
 }

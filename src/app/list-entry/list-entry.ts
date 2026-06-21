@@ -7,6 +7,22 @@ import { MatButtonModule } from '@angular/material/button';
   selector: 'hp-list-entry',
   imports: [CommonModule, MatIconModule, MatButtonModule],
   template: `
+    @if (githubLink() || paperLink()) {
+      <div class="icon-buttons">
+        @if (githubLink()) {
+          <a mat-icon-button href="{{ githubLink() }}" target="_blank">
+            <mat-icon svgIcon="github"></mat-icon>
+          </a>
+        }
+        @if (paperLink()) {
+          <a mat-icon-button href="{{ paperLink() }}" target="_blank">
+            <mat-icon fontIcon="article"></mat-icon>
+          </a>
+        }
+      </div>
+    } @else {
+      <span></span>
+    }
     <div>
       <div class="item-title">{{ title() }}</div>
       @for (line of descriptionLines(); track line) {
@@ -27,18 +43,6 @@ import { MatButtonModule } from '@angular/material/button';
             }
           </div>
         </div>
-      }
-    </div>
-    <div>
-      @if (githubLink()) {
-        <a mat-icon-button href="{{ githubLink() }}" target="_blank">
-          <mat-icon svgIcon="github"></mat-icon>
-        </a>
-      }
-      @if (paperLink()) {
-        <a mat-icon-button href="{{ paperLink() }}" target="_blank">
-          <mat-icon fontIcon="article"></mat-icon>
-        </a>
       }
     </div>
   `,
