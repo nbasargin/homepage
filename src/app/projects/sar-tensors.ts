@@ -25,17 +25,13 @@ export const sarTensorsDescription: ProjectDescription = {
         <p>
           A large portion of my PhD is dedicated to tensor decompositions for SAR data, which features multiple
           dimensions including time, polarization, and frequency. The main motivation is to extract information along
-          several dimensions at once, instead of looking at each data dimension individually. The following publication
-          is related to this work:
+          several dimensions at once, instead of looking at each data dimension individually. We have explored two
+          approaches:
         </p>
-
-        <hp-list-entry
-          [title]="'Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis'"
-          [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
-          [timePlaces]="[{ time: '2023', place: 'IEEE TGRS' }]"
-          [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
-        >
-        </hp-list-entry>
+        <ul>
+          <li>Constrained Tensor Decompositions, a fully algebraic and model-free approach</li>
+          <li>Model-based Tensor Decompositions, an approach integrating physical modeling</li>
+        </ul>
 
         <div class="block-subtitle mt-l">Constrained Decompositions</div>
         <p>
@@ -54,7 +50,6 @@ export const sarTensorsDescription: ProjectDescription = {
 
         <hp-gallery [images]="constrainedImage"></hp-gallery>
 
-        <div class="block-subtitle mt-l">Decomposition as an Optimization Problem</div>
         <p>
           The decomposition is formulated as an optimization problem, and is solved by iterative gradient descent. In
           the forward pass, the method starts with unconstrained factors and applies constraint functions to restrict
@@ -69,13 +64,51 @@ export const sarTensorsDescription: ProjectDescription = {
           optimization step is performed to update the factors. The process is repeated until convergence.
         </p>
 
-        <div class="block-subtitle mt-l">Polarimetric Time Series Analysis</div>
         <p>
           The proposed framework is applied to polarimetric SAR time series data to analyze changes over agricultural
           areas. The obtained temporal factors describe the changes in the signal in a compact way and show a
           correlation to certain crop parameters. Furthermore, the methods allows to quantify changes in more detail and
-          provides an interpretation through the extracted polarimetric factors.
+          provides an interpretation through the extracted polarimetric factors. More details on constrained
+          decompositions can be found in the following paper.
         </p>
+
+        <hp-list-entry
+          [title]="'Constrained Tensor Decompositions for SAR Data: Agricultural Polarimetric Time Series Analysis'"
+          [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+          [timePlaces]="[{ time: '2023', place: 'IEEE TGRS' }]"
+          [paperLink]="'https://ieeexplore.ieee.org/document/10313300'"
+        >
+        </hp-list-entry>
+
+        <div class="block-subtitle mt-l">Model-based Decompositions</div>
+
+        <p>
+          The next development is the integration of physical models into the decomposition. The main advantage is the
+          ability to directly estimate geophysical parameters from the data. Here, the physical models connect the
+          geophysical parameters like soil moisture to the exected SAR signal. At the same time, tensors provide a
+          larger observation space compared to individual covariance matrices, allowing to use more advanced physical
+          models with more parameters. This is especially important for scenarios where the signal is a mixture of
+          several scattering mechanisms. For example, over agricultural areas, where both the ground and the vegetation
+          influence the signal.
+        </p>
+
+        <hp-gallery [images]="modelBasedImage"></hp-gallery>
+
+        <p>
+          The proposed method jointly analyses polarimetric, temporal, and spatial information, decomposes the signal
+          into the surface, dihedral, and volume contributions, and provides estimates for geophysical parameters
+          including soil moisture. More details can be found in the following paper.
+        </p>
+
+        <hp-list-entry
+          [title]="
+            'Model-Based Tensor Decompositions for Geophysical Parameter Retrieval From Multidimensional SAR Data'
+          "
+          [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
+          [timePlaces]="[{ time: '2026', place: 'IEEE TGRS' }]"
+          [paperLink]="'https://ieeexplore.ieee.org/abstract/document/11493477'"
+        >
+        </hp-list-entry>
       </div>
     </div>
   `,
@@ -116,6 +149,19 @@ export class SarTensorsComponent {
       thumbSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-constrained-td-forward.1500x800.png',
       thumbAlt: 'Forward pass reconstructs the tensor and computes the distance to the input data.',
       thumbClass: 'img-rounded img-h300',
+      thumbCropped: false,
+    },
+  ];
+
+  modelBasedImage: Array<GalleryImage> = [
+    {
+      imgSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-model-based-td.1500x950.png',
+      imgWidth: 1500,
+      imgHeight: 950,
+      thumbSrc: baseUrl + 'assets/projects/sar-tensors/sar-tensors-model-based-td.1500x950.png',
+      thumbAlt:
+        'Model-based decomposition represents the signal as a sum of model-based components and provides estimates for geophysical parameters.',
+      thumbClass: 'img-rounded img-h400',
       thumbCropped: false,
     },
   ];
