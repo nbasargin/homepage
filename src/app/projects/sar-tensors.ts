@@ -19,7 +19,7 @@ export const sarTensorsDescription: ProjectDescription = {
   selector: 'hp-projects-sar-tensors',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, ListEntryComponent, GalleryComponent],
   template: `
-    <div class="grid-800 pt-l pb-l">
+    <div class="grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="block-title">SAR Tensors</div>
         <p>

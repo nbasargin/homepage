@@ -14,14 +14,14 @@
   display: flex;
   align-items: baseline;
   justify-content: end;
-  height: 100%;
+  height: var(--glob-header-height);
 }
 
 .navbar-item {
   padding: 0 16px;
   font-size: 18px;
   line-height: var(--glob-header-height);
-  height: 100%;
+  height: var(--glob-header-height);
   cursor: pointer;
   font-variant: small-caps;
 

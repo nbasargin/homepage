@@ -44,19 +44,32 @@
   background: var(--mat-sys-primary-container);
 }
 
-/* CV */
+.project-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(var(--card-min-width), var(--card-max-width)));
+  gap: var(--glob-spacing-l);
+  justify-content: center;
+  align-content: stretch;
+}
+
+/* --card-min-width * 4 + --glob-page-padding * 5 */
+@media (max-width: 1120px) {
+  .project-highlight-grid {
+    grid-template-columns: repeat(2, minmax(var(--card-min-width), var(--card-max-width)));
+  }
+}
+
+/* --card-min-width * 2 + --glob-page-padding * 3 */
+@media (max-width: 572px) {
+  .project-highlight-grid {
+    grid-template-columns: minmax(var(--card-min-width), var(--card-max-width));
+  }
+}
+
+.work-section {
+  background: var(--mat-sys-primary-container);
+}
 
 .awards-section {
   background: var(--mat-sys-primary-container);
-}
-
-.education-section {
-  background: var(--mat-sys-primary-container);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--glob-spacing-m);
-  justify-content: start;
 }

@@ -9,7 +9,7 @@ import { baseUrl } from '../../environments/environment';
   selector: 'hp-page-home',
   imports: [MatIconModule, ProjectCardComponent, ListEntryComponent],
   template: `
-    <div class="grid-800 pt-l pb-l">
+    <div class="grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="profile-block">
           <div class="personal-info">
@@ -26,10 +26,10 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="projects-section grid-1200 pt-l pb-l">
+    <div class="projects-section grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title centered mb-l">Project Highlights</div>
-        <div class="project-list">
+        <div class="project-highlight-grid">
           @for (project of HIGHLIGHT_PROJECTS; track $index) {
             <hp-project-card [projectData]="project"></hp-project-card>
           }
@@ -37,10 +37,10 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="grid-800 pt-l pb-l">
+    <div class="publication-section grid-narrow pt-l pb-l">
       <div class="center-col">
-        <div class="block-title mb-m">Publications</div>
-        <div class="about-grid">
+        <div class="block-title mb-m">Selected Publications</div>
+        <div class="list-entry-grid">
           <hp-list-entry
             [title]="'Explainable Physical PolSAR Autoencoders for Soil Moisture Estimation'"
             [descriptionLines]="['Nikita Basargin, Alberto Alonso-González, Irena Hajnsek']"
@@ -62,32 +62,10 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="awards-section grid-800 pt-l pb-l">
-      <div class="center-col">
-        <div class="block-title mb-m">Awards and Scholarships</div>
-        <div class="about-grid">
-          <hp-list-entry
-            [title]="'Best Poster Award by ESA'"
-            [timePlaces]="[{ time: '2023', place: 'IEEE GRSS IADF School' }]"
-          >
-          </hp-list-entry>
-          <hp-list-entry
-            [title]="'Rohde & Schwarz Best-Bachelor-Award'"
-            [timePlaces]="[{ time: '2017', place: 'TUM, Munich' }]"
-          >
-          </hp-list-entry>
-          <hp-list-entry [title]="'best.in.tum'" [timePlaces]="[{ time: '2016 - 2020', place: 'TUM, Munich' }]">
-          </hp-list-entry>
-          <hp-list-entry [title]="'Max Weber Program Scholarship'" [timePlaces]="[{ time: '2014 - 2020', place: '' }]">
-          </hp-list-entry>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid-800 pt-l pb-l">
+    <div class="work-section grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Work Experience</div>
-        <div class="about-grid">
+        <div class="list-entry-grid">
           <hp-list-entry
             [title]="'Software Engineer'"
             [descriptionLines]="[
@@ -101,10 +79,10 @@ import { baseUrl } from '../../environments/environment';
       </div>
     </div>
 
-    <div class="education-section grid-800 pt-l pb-l">
+    <div class="education-section grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-m">Education</div>
-        <div class="about-grid">
+        <div class="list-entry-grid">
           <hp-list-entry
             [title]="'(Ongoing) PhD in Data Science and Remote Sensing'"
             [descriptionLines]="[
@@ -136,6 +114,28 @@ import { baseUrl } from '../../environments/environment';
               { time: '2016', place: 'NUS, Singapore' },
             ]"
           >
+          </hp-list-entry>
+        </div>
+      </div>
+    </div>
+
+    <div class="awards-section grid-narrow pt-l pb-l">
+      <div class="center-col">
+        <div class="block-title mb-m">Awards and Scholarships</div>
+        <div class="list-entry-grid">
+          <hp-list-entry
+            [title]="'Best Poster Award by ESA'"
+            [timePlaces]="[{ time: '2023', place: 'IEEE GRSS IADF School' }]"
+          >
+          </hp-list-entry>
+          <hp-list-entry
+            [title]="'Rohde & Schwarz Best-Bachelor-Award'"
+            [timePlaces]="[{ time: '2017', place: 'TUM, Munich' }]"
+          >
+          </hp-list-entry>
+          <hp-list-entry [title]="'best.in.tum'" [timePlaces]="[{ time: '2016 - 2020', place: 'TUM, Munich' }]">
+          </hp-list-entry>
+          <hp-list-entry [title]="'Max Weber Program Scholarship'" [timePlaces]="[{ time: '2014 - 2020', place: '' }]">
           </hp-list-entry>
         </div>
       </div>

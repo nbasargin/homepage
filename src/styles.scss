@@ -10,7 +10,7 @@
   --glob-header-height: 64px;
   --glob-page-width: 1200px;
   --glob-page-padding: var(--glob-spacing-l);
-  --glob-article-width: 800px;
+  --glob-narrow-section-width: 800px;
 
   @media screen and (max-width: 600px) {
     --glob-page-padding: var(--glob-spacing-m);
@@ -50,9 +50,9 @@ body {
 
 /* layout */
 
-.grid-800 {
+.grid-narrow {
   display: grid;
-  grid-template-columns: 1fr min(var(--glob-article-width), calc(100% - var(--glob-page-padding) * 2)) 1fr;
+  grid-template-columns: 1fr min(var(--glob-narrow-section-width), calc(100% - var(--glob-page-padding) * 2)) 1fr;
   grid-column-gap: var(--glob-page-padding);
 
   .center-col {
@@ -60,7 +60,7 @@ body {
   }
 }
 
-.grid-1200 {
+.grid-wide {
   display: grid;
   grid-template-columns: 1fr min(var(--glob-page-width), calc(100% - var(--glob-page-padding) * 2)) 1fr;
   grid-column-gap: var(--glob-page-padding);
@@ -151,14 +151,11 @@ body {
   max-width: 100%;
 }
 
-.project-list {
-  /*display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), max-content));*/
-  display: flex;
-  flex-flow: row wrap;
-  gap: var(--glob-spacing-l);
-  justify-content: center;
-  align-content: stretch;
+.list-entry-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--glob-spacing-m);
+  justify-content: start;
 }
 
 .warning-note {

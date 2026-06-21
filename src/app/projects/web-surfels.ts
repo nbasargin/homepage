@@ -18,7 +18,7 @@ export const webSurfelsDescription: ProjectDescription = {
   selector: 'hp-projects-web-surfels',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, GalleryComponent],
   template: `
-    <div class="grid-800 pt-l pb-l">
+    <div class="grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="block-title">WebSurfels</div>
 

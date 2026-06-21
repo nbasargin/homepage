@@ -1,0 +1,7 @@
+.project-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--glob-spacing-l);
+  justify-content: center;
+  align-content: stretch;
+}

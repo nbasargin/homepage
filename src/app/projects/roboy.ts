@@ -18,7 +18,7 @@ export const roboyDescription: ProjectDescription = {
   selector: 'hp-projects-roboy',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, GalleryComponent],
   template: `
-    <div class="grid-800 pt-l pb-l">
+    <div class="grid-narrow pt-l pb-l">
       <div class="center-col">
         <div class="block-title">Roboy</div>
 

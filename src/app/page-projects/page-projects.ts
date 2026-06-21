@@ -6,7 +6,7 @@ import { ALL_PROJECTS } from '../project-list';
   selector: 'hp-page-projects',
   imports: [ProjectCardComponent],
   template: `
-    <div class="grid-800 pt-l pb-l">
+    <div class="grid-wide pt-l pb-l">
       <div class="center-col">
         <div class="block-title mb-l">Projects</div>
         <div class="project-list">

@@ -6,7 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
   selector: 'hp-header',
   imports: [RouterLink, RouterLinkActive, MatTabsModule],
   template: `
-    <nav class="grid-800">
+    <nav class="grid-wide">
       <div class="center-col navbar">
         <div class="navbar-item" routerLinkActive="active" routerLink="/home">
           <span class="navbar-link">Home</span>
